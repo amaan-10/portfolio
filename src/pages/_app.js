@@ -1,4 +1,6 @@
+import DetailsSection from "@/components/DetailsSection";
 import Navbar from "@/components/Navbar";
+import ProfileCard from "@/components/ProfileCard";
 import "@/styles/globals.css";
 import { Poppins } from "next/font/google";
 import Head from "next/head";
