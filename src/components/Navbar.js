@@ -6,56 +6,74 @@ const Navbar = () => {
     <>
       <header className="w-full px-32 py-8 font-medium">
         <div className="flex-none h-auto left-1/2 absolute top-[30px] transform -translate-x-1/2 w-auto z-10">
-          <nav className="flex items-center justify-center flex-row flex-nowrap gap-[18px] h-12 overflow-visible px-5 relative w-min bg-nav rounded-2xl">
-            <Link className="flex-none h-6 relative w-6" href="/">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={24}
-                height={24}
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="var(--token-182ee8b3-4984-4a8e-9e60-5c8c5b4cb4cf, rgb(255, 255, 255))"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                style={{ width: "100%", height: "100%" }}
-              >
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                <polyline points="9 22 9 12 15 12 15 22" />
-              </svg>
+          <nav className="flex items-center justify-center flex-row flex-nowrap gap-7 h-12 overflow-visible px-5 relative w-min bg-nav rounded-2xl">
+            <Link className="flex-none h-6 relative w-6 group" href="/">
+              <div className="absolute inset-0 opacity-50"></div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={24}
+                  height={24}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--token-182ee8b3-4984-4a8e-9e60-5c8c5b4cb4cf, rgb(255, 255, 255))"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  style={{ width: "100%", height: "100%" }}
+                >
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+              </div>
+              <span class="absolute mt-2 w-max -translate-x-1/2 bg-nav text-white text-sm px-2 py-1 rounded-xl opacity-0 group-hover:opacity-100 origin-center ease-in-out  top-8 left-1/2 transition-all duration-300 transform -translate-y-full group-hover:translate-y-0 ">
+                Home
+              </span>
             </Link>
 
-            <Link className="flex-none h-6 relative w-6" href="/">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={24}
-                height={24}
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="var(--token-182ee8b3-4984-4a8e-9e60-5c8c5b4cb4cf, rgb(255, 255, 255))"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                style={{ width: "100%", height: "100%" }}
-              >
-                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
-              </svg>
+            <Link className="flex-none h-6 relative w-6 group" href="/">
+              <div className="absolute inset-0 opacity-50"></div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={24}
+                  height={24}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--token-182ee8b3-4984-4a8e-9e60-5c8c5b4cb4cf, rgb(255, 255, 255))"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  style={{ width: "100%", height: "100%" }}
+                >
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+                </svg>
+              </div>
+              <span class="absolute mt-2 w-max -translate-x-1/2 bg-nav text-white text-sm px-2 py-1 rounded-xl opacity-0 group-hover:opacity-100 origin-center ease-in-out  top-8 left-1/2 transition-all duration-300 transform -translate-y-full group-hover:translate-y-0 ">
+                Projects
+              </span>
             </Link>
-            <Link className="flex-none h-6 relative w-6" href="/">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={24}
-                height={24}
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="var(--token-182ee8b3-4984-4a8e-9e60-5c8c5b4cb4cf, rgb(255, 255, 255))"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                style={{ width: "100%", height: "100%" }}
-              >
-                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
-              </svg>
+            <Link className="flex-none h-6 relative w-6 group" href="/">
+              <div className="absolute inset-0 opacity-50"></div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={24}
+                  height={24}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--token-182ee8b3-4984-4a8e-9e60-5c8c5b4cb4cf, rgb(255, 255, 255))"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  style={{ width: "100%", height: "100%" }}
+                >
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                </svg>
+              </div>
+              <span class="absolute mt-2 w-max -translate-x-1/2 bg-nav text-white text-sm px-2 py-1 rounded-xl opacity-0 group-hover:opacity-100 origin-center ease-in-out  top-8 left-1/2 transition-all duration-300 transform -translate-y-full group-hover:translate-y-0 ">
+                Tools
+              </span>
             </Link>
           </nav>
         </div>
