@@ -16,6 +16,7 @@ module.exports = {
       colors: {
         black: "#151312",
         white: "#FFFFFF",
+        nav: "#FFFFFF08", //bg-nav
         gray: "#998F8F",
         green: "#C5FF41",
         orange: "#F46C38",
