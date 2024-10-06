@@ -49,7 +49,7 @@ const ProfileCard = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center flex-none flex-row gap-[10px] h-[166px] overflow-visible p-0 absolute left-[-135px] top-[348px] w-[270px]">
+          <div className="flex items-center justify-center flex-none flex-row gap-[10px] h-[166px] overflow-visible p-4 absolute left-[-135px] top-[348px] w-[275px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
