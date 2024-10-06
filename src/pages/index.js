@@ -10,7 +10,7 @@ export default function Home() {
         <Layout className="pt-0">
           <div className="flex gap-[50px] w-full">
             <ProfileCard />
-            <div className="w-1/2">
+            <div className="flex flex-col items-center justify-center bg-[#fff0] flex-[1_0_0px] gap-0 h-min overflow-visible relative w-[1px]">
               <DetailsSection />
             </div>
           </div>
