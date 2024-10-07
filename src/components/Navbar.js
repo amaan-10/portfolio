@@ -11,10 +11,10 @@ const Navbar = () => {
             <Link className="flex-none h-6 relative w-6 group" href="/">
               <HomeIcon />
             </Link>
-            <Link className="flex-none h-6 relative w-6 group" href="/">
+            <Link className="flex-none h-6 relative w-6 group" href="/projects">
               <ProjectsIcon />
             </Link>
-            <Link className="flex-none h-6 relative w-6 group" href="/">
+            <Link className="flex-none h-6 relative w-6 group" href="/tools">
               <ToolsIcon />
             </Link>
           </nav>
