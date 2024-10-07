@@ -51,7 +51,11 @@ const ResumeCard = () => {
             </p>
           </div>
           <div className="flex-none h-8 w-8 relative transform rotate-90">
-            <a className="flex flex-row items-center justify-center gap-2 h-8 w-8 mt-1 rounded border border-white border-solid cursor-pointer opacity-100 bg-transparent overflow-hidden">
+            <a
+              className="flex flex-row items-center justify-center gap-2 h-8 w-8 mt-1 rounded border border-white border-solid cursor-pointer opacity-100 bg-transparent overflow-hidden"
+              href="/amaan-resume.pdf"
+              download="amaan-resume.pdf"
+            >
               <div className="flex-none h-5 w-5 relative bottom-[3px]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
