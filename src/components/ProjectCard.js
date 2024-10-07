@@ -49,8 +49,8 @@ const ProjectCard = ({ image, title, description }) => {
                 </div>
               </div>
               <div className="flex flex-col justify-start h-auto relative whitespace-pre-wrap w-full break-words">
-                <div class="font-poppins text-left text-gray leading-[140%] tracking-0 mb-[20px]">
-                  <p class="font-normal text-[16px]">{description}</p>
+                <div className="font-poppins text-left text-gray leading-[140%] tracking-0 mb-[20px]">
+                  <p className="font-normal text-[16px]">{description}</p>
                 </div>
               </div>
             </div>
