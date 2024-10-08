@@ -55,7 +55,10 @@ const ProjectsInfoCard = () => {
             <p>MERN STACK PROJECTS</p>
           </div>
           <div className="flex-none h-8 relative w-8">
-            <a className="flex flex-row flex-nowrap items-center justify-center gap-2 h-8 relative w-8 cursor-pointer overflow-hidden no-underline border border-solid border-t border-b border-l border-r border-black bg-transparent rounded-lg opacity-100">
+            <a
+              href="/projects"
+              className="flex flex-row flex-nowrap items-center justify-center gap-2 h-8 relative w-8 cursor-pointer overflow-hidden no-underline border border-solid border-t border-b border-l border-r border-black bg-transparent rounded-lg opacity-100"
+            >
               <div className="flex-none h-5 relative w-5 bottom-[3px]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
