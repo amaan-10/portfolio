@@ -8,9 +8,14 @@ const DetailsSection = () => {
   return (
     <>
       <Info />
-      <RecentProjects />
+      <div className="pt-28">
+        <RecentProjects />
+      </div>
+      <div className="pt-28"></div>
       <Tools />
-      <ContactMe />
+      <div className="pt-28">
+        <ContactMe />
+      </div>
     </>
   );
 };
