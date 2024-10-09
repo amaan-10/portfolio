@@ -57,26 +57,23 @@ const ProjectsInfoCard = () => {
           <div className="flex-none h-8 relative w-8">
             <a
               href="/projects"
-              className="flex flex-row flex-nowrap items-center justify-center gap-2 h-8 relative w-8 cursor-pointer overflow-hidden no-underline border border-solid border-t border-b border-l border-r border-black bg-transparent rounded-lg opacity-100"
+              className="flex flex-row flex-nowrap items-center justify-center  gap-2 h-8 relative w-8 p-0 cursor-pointer overflow-hidden no-underline border border-solid border-t border-b border-l border-r border-black hover:bg-black bg-transparent rounded-lg opacity-100"
             >
-              <div className="flex-none h-5 relative w-5 bottom-[3px]">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  color="var(--token-796ee79d-fa4e-4408-bc78-57c89a70fe0d, rgb(21, 19, 18))"
-                  style={{
-                    userSelect: "none",
-                    width: "100%",
-                    height: "100%",
-                    display: "inline-block",
-                    fill: "var(--token-796ee79d-fa4e-4408-bc78-57c89a70fe0d, rgb(21, 19, 18))",
-                    flexShrink: 0,
-                  }}
-                >
-                  <path d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z" />
-                </svg>
-              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                focusable="false"
+                viewBox="0 0 24 24"
+                style={{
+                  userSelect: "none",
+                  width: "100%",
+                  height: "100%",
+                  display: "inline-block",
+                  flexShrink: 0,
+                }}
+                className=" p-[5px] fill-black hover:fill-green"
+              >
+                <path d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z" />
+              </svg>
             </a>
           </div>
         </div>
