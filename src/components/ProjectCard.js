@@ -8,7 +8,7 @@ const ProjectCard = ({ image, title, description, link }) => {
         <a
           href={link}
           target="blank_"
-          className="bg-transparent rounded-lg opacity-100 cursor-pointer flex flex-row flex-nowrap h-auto justify-between overflow-hidden px-4 py-5 relative w-[696px]"
+          className="bg-transparent hover:bg-nav rounded-lg opacity-100 cursor-pointer flex flex-row flex-nowrap h-auto justify-between overflow-hidden px-4 py-5 relative w-[696px]"
         >
           <div
             className="absolute right-5 top-9 w-5 h-5 z-10"
