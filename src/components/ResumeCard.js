@@ -52,28 +52,25 @@ const ResumeCard = () => {
           </div>
           <div className="flex-none h-8 w-8 relative transform rotate-90">
             <a
-              className="flex flex-row items-center justify-center gap-2 h-8 w-8 mt-1 rounded border border-white border-solid cursor-pointer opacity-100 bg-transparent overflow-hidden"
+              className="flex flex-row items-center justify-center gap-2 h-8 w-8 mt-1 rounded border hover:bg-white border-white border-solid cursor-pointer opacity-100 bg-transparent overflow-hidden"
               href="/amaan-resume.pdf"
               download="amaan-resume.pdf"
             >
-              <div className="flex-none h-5 w-5 relative bottom-[3px]">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  color="rgb(255, 255, 255)"
-                  style={{
-                    userSelect: "none",
-                    width: "100%",
-                    height: "100%",
-                    display: "inline-block",
-                    fill: "rgb(255, 255, 255)",
-                    flexShrink: 0,
-                  }}
-                >
-                  <path d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z" />
-                </svg>
-              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                focusable="false"
+                viewBox="0 0 24 24"
+                style={{
+                  userSelect: "none",
+                  width: "100%",
+                  height: "100%",
+                  display: "inline-block",
+                  flexShrink: 0,
+                }}
+                className=" p-[5px] fill-white hover:fill-orange"
+              >
+                <path d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z" />
+              </svg>
             </a>
           </div>
         </div>
