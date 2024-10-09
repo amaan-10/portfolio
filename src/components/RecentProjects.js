@@ -29,11 +29,13 @@ const RecentProjects = () => {
               image={EmployMeeImage}
               title={"Employ-Mee"}
               description={"Job Portal App"}
+              link={"https://employ-mee.vercel.app/"}
             />
             <ProjectCard
               image={QuizImage}
               title={"Quiz Website"}
               description={"A Quiz Website"}
+              link={"https://quiz-website-t7cq.onrender.com/"}
             />
             <ProjectCard
               image={PortfolioImage}

@@ -1,11 +1,15 @@
 import Image from "next/image";
 import React from "react";
 
-const ProjectCard = ({ image, title, description }) => {
+const ProjectCard = ({ image, title, description, link }) => {
   return (
     <>
       <div className="flex-none h-auto relative w-full">
-        <div className="bg-transparent rounded-lg opacity-100 cursor-pointer flex flex-row flex-nowrap h-auto justify-between overflow-hidden px-4 py-5 relative w-[696px]">
+        <a
+          href={link}
+          target="blank_"
+          className="bg-transparent rounded-lg opacity-100 cursor-pointer flex flex-row flex-nowrap h-auto justify-between overflow-hidden px-4 py-5 relative w-[696px]"
+        >
           <div
             className="absolute right-5 top-9 w-5 h-5 z-10"
             style={{
@@ -55,7 +59,7 @@ const ProjectCard = ({ image, title, description }) => {
               </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </>
   );
