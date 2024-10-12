@@ -7,6 +7,11 @@ import React from "react";
 const tools = () => {
   return (
     <>
+      <Head>
+        <meta name="viewport" content="width-device width, initial-scale=1" />
+        <title>Amaan | Tools</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <main className="flex items-center text-white w-full min-h-screen">
         <Layout className="pt-0">
           <div className="flex gap-[50px] w-full">
