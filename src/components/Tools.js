@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Nextjs from "../assets/nextjs-logo.png";
+import Reactjs from "../assets/react-logo.png";
+import Nodejs from "../assets/nodejs-logo.png";
 import ToolCard from "./ToolCard";
 
 const Tools = () => {
@@ -24,10 +26,22 @@ const Tools = () => {
           </div>
           <div className="grid grid-cols-2 gap-[10px] auto-rows-min justify-start w-full relative p-0">
             <ToolCard
+              image={Reactjs}
+              title={"Reactjs"}
+              description={"The library for web and UI"}
+              link={"https://react.dev/"}
+            />
+            <ToolCard
               image={Nextjs}
               title={"Nextjs"}
               description={"React framework"}
               link={"https://nextjs.org/"}
+            />
+            <ToolCard
+              image={Nodejs}
+              title={"Nodejs"}
+              description={"Used for server-side scripting"}
+              link={"https://nodejs.org/en"}
             />
           </div>
         </div>
