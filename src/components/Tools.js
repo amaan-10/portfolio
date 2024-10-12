@@ -27,6 +27,7 @@ const Tools = () => {
               image={Nextjs}
               title={"Nextjs"}
               description={"React framework"}
+              link={"https://nextjs.org/"}
             />
           </div>
         </div>

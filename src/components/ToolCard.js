@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
 
-const ToolCard = ({ image, title, description }) => {
+const ToolCard = ({ image, title, description, link }) => {
   return (
     <>
       <div className="self-start flex-none h-auto justify-self-start relative w-full ">
         <a
-          href=""
+          href={link}
           target="blank_"
           className="bg-transparent hover:bg-nav rounded-lg opacity-100 will-change-auto flex items-center cursor-pointer flex-row flex-nowrap gap-4 h-min justify-start overflow-hidden p-4 relative w-[300px]"
         >
