@@ -2,6 +2,7 @@ import ContactMe from "@/components/ContactMe";
 import Layout from "@/components/Layout";
 import ProfileCard from "@/components/ProfileCard";
 import Tools from "@/components/Tools";
+import Head from "next/head";
 import React from "react";
 
 const tools = () => {

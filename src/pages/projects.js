@@ -2,6 +2,7 @@ import ContactMe from "@/components/ContactMe";
 import Layout from "@/components/Layout";
 import ProfileCard from "@/components/ProfileCard";
 import RecentProjects from "@/components/RecentProjects";
+import Head from "next/head";
 import React from "react";
 
 const projects = () => {
