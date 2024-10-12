@@ -7,7 +7,7 @@ const ProfileCard = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center gap-10 h-min overflow-hidden p-0 sticky top-[40px] w-min will-change-transform z-1 ">
-        <div className="flex flex-col items-center justify-start gap-6 h-[640px] overflow-hidden p-[30px_20px] relative w-[344px] will-change-transform bg-white rounded-[16px] opacity-100">
+        <div className="flex flex-col items-center justify-start gap-6 h-[690px] overflow-hidden p-[30px_20px] relative w-[344px] will-change-transform bg-white rounded-[16px] opacity-100">
           <div className="flex flex-row items-center justify-center h-[100px] left-0 overflow-visible p-0 absolute top-[-18px] w-[194px] z-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,9 @@ const ProfileCard = () => {
             <div className="flex items-center justify-center flex-none flex-col gap-2 h-min overflow-hidden p-0 relative w-full">
               <div className="outline-none flex flex-col justify-start flex-shrink-0 transform-none opacity-100 flex-none h-auto max-w-[300px] relative whitespace-pre-wrap w-full break-words">
                 <p className="font-poppins text-[18px] font-medium leading-[110%] text-center text-darkGray">
-                  A Product Designer who has crafted countless user experiences.
+                  An AI & Data Science student eager to become a Software
+                  Developer, with a focus on building efficient, user-friendly
+                  applications.
                 </p>
               </div>
               <div className="flex items-center justify-center flex-none flex-row flex-nowrap gap-[16px] h-min overflow-hidden p-0 relative w-full">
