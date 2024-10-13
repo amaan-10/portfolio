@@ -60,9 +60,9 @@ const Tools = () => {
             />
             <ToolCard
               image={ChatGPT}
-              title={"MongoDB"}
-              description={"A NoSQL document database"}
-              link={"https://www.mongodb.com/"}
+              title={"ChatGPT"}
+              description={"AI Assistant"}
+              link={"https://chatgpt.com/"}
             />
           </div>
         </div>
