@@ -3,6 +3,7 @@ import React from "react";
 import Nextjs from "../assets/nextjs-logo.png";
 import Reactjs from "../assets/react-logo.png";
 import Nodejs from "../assets/nodejs-logo.png";
+import MongoDB from "../assets/mongodb-logo.png";
 import ToolCard from "./ToolCard";
 
 const Tools = () => {
@@ -42,6 +43,12 @@ const Tools = () => {
               title={"Nodejs"}
               description={"Used for server-side scripting"}
               link={"https://nodejs.org/en"}
+            />
+            <ToolCard
+              image={MongoDB}
+              title={"MongoDB"}
+              description={"A NoSQL document database"}
+              link={"https://www.mongodb.com/"}
             />
           </div>
         </div>
