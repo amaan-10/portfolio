@@ -3,7 +3,9 @@ import React from "react";
 import Nextjs from "../assets/nextjs-logo.png";
 import Reactjs from "../assets/react-logo.png";
 import Nodejs from "../assets/nodejs-logo.png";
+import Expressjs from "../assets/express-logo.png";
 import MongoDB from "../assets/mongodb-logo.png";
+import ChatGPT from "../assets/chatgpt-logo.png";
 import ToolCard from "./ToolCard";
 
 const Tools = () => {
@@ -45,7 +47,19 @@ const Tools = () => {
               link={"https://nodejs.org/en"}
             />
             <ToolCard
+              image={Expressjs}
+              title={"Expressjs"}
+              description={"Node.js web application framework"}
+              link={"https://expressjs.com/"}
+            />
+            <ToolCard
               image={MongoDB}
+              title={"MongoDB"}
+              description={"A NoSQL document database"}
+              link={"https://www.mongodb.com/"}
+            />
+            <ToolCard
+              image={ChatGPT}
               title={"MongoDB"}
               description={"A NoSQL document database"}
               link={"https://www.mongodb.com/"}
