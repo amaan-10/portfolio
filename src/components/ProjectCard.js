@@ -1,17 +1,22 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const ProjectCard = ({ image, title, description, link }) => {
+  const [hover, setHover] = useState(false);
   return (
     <>
       <div className="flex-none h-auto relative w-full">
         <a
           href={link}
           target="blank_"
-          className="bg-transparent hover:bg-nav rounded-lg opacity-100 cursor-pointer flex flex-row flex-nowrap h-auto justify-between overflow-hidden px-4 py-5 relative w-[696px]"
+          className="bg-transparent hover:bg-nav rounded-lg opacity-100 cursor-pointer flex flex-row flex-nowrap h-auto justify-between overflow-hidden px-4 py-5 relative w-[696px] transition-shadow duration-300 ease-in-out"
+          onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => setHover(false)}
         >
           <div
-            className="absolute right-5 top-9 w-5 h-5 z-10"
+            className={`absolute right-5 top-9 w-5 h-5 z-10 transition-all duration-300 ease-in-out ${
+              hover ? "right-[1.5%] top-[15%]" : ""
+            }`}
             style={{
               transform: "rotate(-45deg)",
               transformOrigin: "50% 50% 0px",
