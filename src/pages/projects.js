@@ -3,8 +3,12 @@ import Layout from "@/components/Layout";
 import ProfileCard from "@/components/ProfileCard";
 import RecentProjects from "@/components/RecentProjects";
 import gsap from "gsap";
+import dynamic from "next/dynamic";
 import Head from "next/head";
 import React, { useEffect, useRef } from "react";
+const AnimatedSection = dynamic(() => import("../components/AnimatedSection"), {
+  ssr: false,
+});
 
 const projects = () => {
   const mainContentRef = useRef(null);
@@ -52,9 +56,14 @@ const projects = () => {
               ref={mainContentRefDelay}
               className="flex flex-col items-center justify-center bg-[#fff0] flex-[1_0_0px] gap-0 h-min overflow-visible relative w-[1px]"
             >
-              <RecentProjects />
+              <AnimatedSection>
+                <RecentProjects />
+              </AnimatedSection>
+
               <div className="pt-28">
-                <ContactMe />
+                <AnimatedSection>
+                  <ContactMe />
+                </AnimatedSection>
               </div>
             </div>
           </div>
