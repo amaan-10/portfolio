@@ -6,6 +6,34 @@ import Head from "next/head";
 import React from "react";
 
 const projects = () => {
+  const mainContentRef = useRef(null);
+  const mainContentRefDelay = useRef(null);
+
+  useEffect(() => {
+    // Fade-in effect on window load
+    gsap.fromTo(
+      mainContentRef.current, // Use the ref to target the specific div
+      { opacity: 0, y: -30 }, // Initial state
+      {
+        opacity: 1, // Final state
+        y: 0, // Final scale
+        duration: 1, // Duration of the animation
+        ease: "power2.out", // Easing function for smooth effect
+      }
+    );
+    // Fade-in effect on window load
+    gsap.fromTo(
+      mainContentRefDelay.current, // Use the ref to target the specific div
+      { opacity: 0, y: -30 }, // Initial state
+      {
+        opacity: 1, // Final state
+        y: 0, // Final scale
+        duration: 1, // Duration of the animation
+        ease: "power2.out", // Easing function for smooth effect
+        delay: 0.3,
+      }
+    );
+  }, []);
   return (
     <>
       <Head>
