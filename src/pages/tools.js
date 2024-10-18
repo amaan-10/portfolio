@@ -57,9 +57,13 @@ const tools = () => {
               ref={mainContentRefDelay}
               className="flex flex-col items-center justify-center bg-[#fff0] flex-[1_0_0px] gap-0 h-min overflow-visible relative w-[1px]"
             >
-              <Tools />
+              <AnimatedSection>
+                <Tools />
+              </AnimatedSection>
               <div className="pt-28">
-                <ContactMe />
+                <AnimatedSection>
+                  <ContactMe />
+                </AnimatedSection>
               </div>
             </div>
           </div>
