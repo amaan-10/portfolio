@@ -1,0 +1,6 @@
+.animatedSection {
+  align-self: start;
+    opacity: 0; /* Start hidden */
+    transform: translateY(50px) scale(0.9); /* Start with movement and scale */
+  }
+  
