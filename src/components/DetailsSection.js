@@ -3,18 +3,30 @@ import Info from "./Info";
 import RecentProjects from "./RecentProjects";
 import Tools from "./Tools";
 import ContactMe from "./ContactMe";
+import dynamic from "next/dynamic";
+
+// Dynamically import the AnimatedSection component with SSR disabled
+const AnimatedSection = dynamic(() => import("../components/AnimatedSection"), {
+  ssr: false,
+});
 
 const DetailsSection = () => {
   return (
     <>
       <Info />
       <div className="pt-28">
-        <RecentProjects />
+        <AnimatedSection>
+          <RecentProjects />
+        </AnimatedSection>
       </div>
       <div className="pt-28"></div>
-      <Tools />
+      <AnimatedSection>
+        <Tools />
+      </AnimatedSection>
       <div className="pt-28">
-        <ContactMe />
+        <AnimatedSection>
+          <ContactMe />
+        </AnimatedSection>
       </div>
     </>
   );
