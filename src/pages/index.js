@@ -39,7 +39,7 @@ export default function Home() {
     <>
       <Head>
         <meta name="viewport" content="width-device width, initial-scale=1" />
-        <title>Amaan's Portfolio</title>
+        <title>Amaan&apos;s Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex items-center text-white w-full min-h-screen">

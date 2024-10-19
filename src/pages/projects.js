@@ -10,7 +10,7 @@ const AnimatedSection = dynamic(() => import("../components/AnimatedSection"), {
   ssr: false,
 });
 
-const projects = () => {
+const Projects = () => {
   const mainContentRef = useRef(null);
   const mainContentRefDelay = useRef(null);
 
@@ -73,4 +73,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;
