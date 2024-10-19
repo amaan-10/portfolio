@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const ToolCard = ({ image, title, description, link }) => {
+const ToolCard = ({ image, title, description, link = "/" }) => {
   return (
     <>
       <div className="self-start flex-none h-auto justify-self-start relative w-full ">

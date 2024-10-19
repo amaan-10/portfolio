@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
-const ProjectCard = ({ image, title, description, link }) => {
+const ProjectCard = ({ image, title, description, link = "/" }) => {
   const [hover, setHover] = useState(false);
   return (
     <>
