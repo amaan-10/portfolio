@@ -1,7 +1,7 @@
 import ContactMe from "@/components/ContactMe";
 import Layout from "@/components/Layout";
 import ProfileCard from "@/components/ProfileCard";
-import Tools from "@/components/Tools";
+import ToolsComponent from "@/components/Tools";
 import gsap from "gsap";
 import dynamic from "next/dynamic";
 import Head from "next/head";
@@ -58,7 +58,7 @@ const Tools = () => {
               className="flex flex-col items-center justify-center bg-[#fff0] flex-[1_0_0px] gap-0 h-min overflow-visible relative w-[1px]"
             >
               <AnimatedSection>
-                <Tools />
+                <ToolsComponent />
               </AnimatedSection>
               <div className="pt-28">
                 <AnimatedSection>
