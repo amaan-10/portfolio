@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-const { fontFamily } = require("tailwindcss/defaultTheme");
-
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,9 +8,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        poppins: ["var(--font-poppins)", ...fontFamily.sans],
-      },
       colors: {
         black: "#151312",
         white: "#FFFFFF",
@@ -23,6 +18,18 @@ module.exports = {
         darkGray: "#6A6B6E",
         softGray: "#B6B4BD33", //#b6b4bd33
       },
+    },
+    screens: {
+      // Custom breakpoints
+      xs: "480px", // Extra small devices
+      sm: "640px", // Small devices
+      md: "810px", // Medium devices (Tablets)
+      lg: "1080px", // Large devices (Laptops)
+      xl: "1280px", // Extra large devices (Desktops)
+      "2xl": "1600px", // Super wide screens
+
+      // Adding a custom "portrait mode" breakpoint
+      portrait: { raw: "(orientation: portrait)" },
     },
   },
   plugins: [],
