@@ -10,7 +10,7 @@ const ContactMe = () => {
               className="font-bold "
               style={{ fontSize: 94, lineHeight: "90px" }}
             >
-              LET'S WORK
+              LET&apos;S WORK
               <p
                 className="font-bold text-softGray relative w-full whitespace-pre-wrap break-words"
                 style={{ fontSize: 94 }}
