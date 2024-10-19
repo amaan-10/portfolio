@@ -16,7 +16,7 @@ const ProjectsInfoCard = () => {
             }}
           ></div>
         </div>
-        <div className="flex items-center content-center flex-none flex-col flex-nowrap gap-[10px] h-[146px] justify-center absolute bottom-[-52px] left-[-3px] overflow-visible p-0 w-[329px] transform rotate-[4deg]">
+        <div className="flex items-center content-center flex-none flex-col flex-nowrap gap-[10px] h-[146px] justify-center absolute bottom-[-88px] lg:bottom-[-52px] left-[-29px] lg:left-[-3px] overflow-visible p-0 w-[329px] transform rotate-[4deg]">
           <div
             className="flex-none h-[284px] relative w-[422px]"
             style={{

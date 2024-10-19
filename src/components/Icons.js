@@ -85,6 +85,7 @@ export const ToolsIcon = () => {
 export const GithubIcon = () => {
   return (
     <div className="flex-none h-auto w-auto relative">
+      {/* add link */}
       <div className="flex items-center cursor-pointer flex-row flex-nowrap gap-[10px] h-auto justify-center overflow-hidden p-[6px] relative no-underline w-auto will-change-transform">
         <div className="">
           <svg
@@ -107,6 +108,7 @@ export const GithubIcon = () => {
 export const TwitterIcon = () => {
   return (
     <div className="flex-none h-auto w-auto relative">
+      {/* add link */}
       <div className="flex items-center cursor-pointer flex-row flex-nowrap gap-[10px] h-auto justify-center overflow-hidden p-[6px] relative no-underline w-auto will-change-transform">
         <div className="">
           <svg
@@ -132,6 +134,7 @@ export const TwitterIcon = () => {
 export const InstagramIcon = () => {
   return (
     <div className="flex-none h-auto w-auto relative">
+      {/* add link */}
       <div className="flex items-center cursor-pointer flex-row flex-nowrap gap-[10px] h-auto justify-center overflow-hidden p-[6px] relative no-underline w-auto will-change-transform">
         <div className="">
           <svg
@@ -159,6 +162,7 @@ export const InstagramIcon = () => {
 export const EmailIcon = () => {
   return (
     <div className="flex-none h-auto w-auto relative">
+      {/* add link */}
       <div className="flex items-center cursor-pointer flex-row flex-nowrap gap-[10px] h-auto justify-center overflow-hidden p-[6px] relative no-underline w-auto will-change-transform">
         <div className="">
           <svg

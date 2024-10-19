@@ -36,7 +36,7 @@ const AnimatedSection = ({ children }) => {
   }, []);
 
   return (
-    <div ref={sectionRef} className={styles.animatedSection}>
+    <div ref={sectionRef} className={`${styles.animatedSection} w-full`}>
       {children}
     </div>
   );

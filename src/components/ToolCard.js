@@ -9,7 +9,7 @@ const ToolCard = ({ image, title, description, link = "/" }) => {
         <Link
           href={link}
           target="blank_"
-          className="bg-transparent hover:bg-nav rounded-lg opacity-100 will-change-auto flex items-center cursor-pointer flex-row flex-nowrap gap-4 h-min justify-start overflow-hidden p-4 relative w-[300px]"
+          className="bg-transparent hover:bg-nav rounded-lg opacity-100 will-change-auto flex items-center cursor-pointer flex-row flex-nowrap gap-4 h-min justify-start overflow-hidden p-4 relative w-full"
         >
           <div className="rounded-lg opacity-100 flex-none h-10 overflow-hidden relative w-10 will-change-auto">
             <div className="absolute inset-0 rounded-inherit">

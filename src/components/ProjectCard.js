@@ -6,11 +6,11 @@ const ProjectCard = ({ image, title, description, link = "/" }) => {
   const [hover, setHover] = useState(false);
   return (
     <>
-      <div className="flex-none h-auto relative w-full">
+      <div className="flex-none h-auto relative max-w-[750px] w-full">
         <Link
           href={link}
           target="blank_"
-          className="bg-transparent hover:bg-nav rounded-lg opacity-100 cursor-pointer flex flex-row flex-nowrap h-auto justify-between overflow-hidden px-4 py-5 relative w-[696px] transition-shadow duration-300 ease-in-out"
+          className="bg-transparent hover:bg-nav rounded-lg opacity-100 cursor-pointer flex flex-row flex-nowrap h-auto justify-between overflow-hidden px-4 py-5 relative w-full transition-shadow duration-300 ease-in-out"
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
         >

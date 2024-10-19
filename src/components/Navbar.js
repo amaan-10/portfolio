@@ -48,7 +48,7 @@ const Navbar = () => {
   }, []);
   return (
     <>
-      <header className="w-full px-32 py-8 font-medium pt-[160px]">
+      <header className="w-full px-32 py-8 font-medium pt-[70px] md:pt-[90px] lg:pt-[130px] xl:pt-[160px]">
         <div className="flex-none h-auto left-1/2 absolute top-[30px] transform -translate-x-1/2 w-auto z-10">
           <nav className="flex items-center justify-center flex-row flex-nowrap gap-7 h-12 overflow-visible px-5 relative w-min bg-nav rounded-2xl">
             <Link

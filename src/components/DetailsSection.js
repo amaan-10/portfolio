@@ -14,20 +14,19 @@ const DetailsSection = () => {
   return (
     <>
       <Info />
-      <div className="pt-28">
-        <AnimatedSection>
-          <RecentProjects />
-        </AnimatedSection>
-      </div>
+      <div className="pt-28"></div>
+      <AnimatedSection>
+        <RecentProjects />
+      </AnimatedSection>
+
       <div className="pt-28"></div>
       <AnimatedSection>
         <Tools />
       </AnimatedSection>
-      <div className="pt-28">
-        <AnimatedSection>
-          <ContactMe />
-        </AnimatedSection>
-      </div>
+      <div className="pt-28"></div>
+      <AnimatedSection>
+        <ContactMe />
+      </AnimatedSection>
     </>
   );
 };
