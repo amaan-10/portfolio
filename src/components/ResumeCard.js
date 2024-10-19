@@ -2,6 +2,9 @@ import Link from "next/link";
 import React from "react";
 
 const ResumeCard = () => {
+  const openResume = () => {
+    window.open("/amaan-resume.pdf", "_blank", "noopener,noreferrer");
+  };
   return (
     <>
       <div className="flex-none flex flex-col nowrap gap-6 h-full overflow-hidden p-[40px_20px_22px] relative w-[268px] bg-orange rounded-[10px] will-change-[transform]">
@@ -53,10 +56,11 @@ const ResumeCard = () => {
           </div>
           <div className="flex-none h-8 w-8 relative transform rotate-90">
             <Link
+              onClick={openResume}
               className="flex flex-row items-center justify-center gap-2 h-8 w-8 mt-1 rounded border hover:bg-white border-white border-solid cursor-pointer opacity-100 bg-transparent overflow-hidden"
               href="/amaan-resume.pdf"
-              target="_blank"
               download="amaan-resume.pdf"
+              target="_blank"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
