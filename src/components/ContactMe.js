@@ -4,10 +4,10 @@ const ContactMe = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center gap-[60px] h-min overflow-hidden relative w-full">
-        <div className="flex items-start justify-center flex-none flex-col flex-nowrap gap-[10px] h-min overflow-hidden p-0 relative w-full bg-[#fff0]">
-          <div className="outline-none flex flex-col justify-start flex-shrink-0 transform-none h-auto relative w-full whitespace-pre-wrap break-words">
+        <div className="flex items-center lg:items-start justify-center flex-none flex-col flex-nowrap gap-[10px] h-min overflow-hidden p-0 relative w-full bg-[#fff0]">
+          <div className="outline-none flex flex-col  items-center lg:items-start justify-start flex-shrink-0 transform-none h-auto relative w-full whitespace-pre-wrap break-words">
             <h1
-              className="font-bold "
+              className="font-bold text-center lg:text-left"
               style={{ fontSize: 94, lineHeight: "90px" }}
             >
               LET&apos;S WORK
@@ -19,11 +19,8 @@ const ContactMe = () => {
               </p>
             </h1>
           </div>
-          <div className="flex-none justify-center items-center h-full w-full">
-            <form
-              className=" p-6 rounded-lg shadow-lg "
-              style={{ width: "696px" }}
-            >
+          <div className="flex lg:block justify-center items-center lg:items-start h-full w-full">
+            <form className=" p-6 rounded-lg shadow-lg w-[696px] lg:w-full max-w-[696px]">
               {/* Flex container for Name and Email */}
               <div className="flex flex-col md:flex-row gap-4 mb-4">
                 <div className="flex-1">
