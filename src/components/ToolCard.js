@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const ToolCard = ({ image, title, description, link }) => {
   return (
     <>
       <div className="self-start flex-none h-auto justify-self-start relative w-full ">
-        <a
+        <Link
           href={link}
           target="blank_"
           className="bg-transparent hover:bg-nav rounded-lg opacity-100 will-change-auto flex items-center cursor-pointer flex-row flex-nowrap gap-4 h-min justify-start overflow-hidden p-4 relative w-[300px]"
@@ -31,7 +32,7 @@ const ToolCard = ({ image, title, description, link }) => {
               </div>
             </div>
           </div>
-        </a>
+        </Link>
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const ProjectCard = ({ image, title, description, link }) => {
@@ -6,7 +7,7 @@ const ProjectCard = ({ image, title, description, link }) => {
   return (
     <>
       <div className="flex-none h-auto relative w-full">
-        <a
+        <Link
           href={link}
           target="blank_"
           className="bg-transparent hover:bg-nav rounded-lg opacity-100 cursor-pointer flex flex-row flex-nowrap h-auto justify-between overflow-hidden px-4 py-5 relative w-[696px] transition-shadow duration-300 ease-in-out"
@@ -64,7 +65,7 @@ const ProjectCard = ({ image, title, description, link }) => {
               </div>
             </div>
           </div>
-        </a>
+        </Link>
       </div>
     </>
   );

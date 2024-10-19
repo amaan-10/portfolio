@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const ProjectsInfoCard = () => {
@@ -55,7 +56,7 @@ const ProjectsInfoCard = () => {
             <p>MERN STACK PROJECTS</p>
           </div>
           <div className="flex-none h-8 relative w-8">
-            <a
+            <Link
               href="/projects"
               className="flex flex-row flex-nowrap items-center justify-center  gap-2 h-8 relative w-8 p-0 cursor-pointer overflow-hidden no-underline border border-solid border-t border-b border-l border-r border-black hover:bg-black bg-transparent rounded-lg opacity-100"
             >
@@ -74,7 +75,7 @@ const ProjectsInfoCard = () => {
               >
                 <path d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

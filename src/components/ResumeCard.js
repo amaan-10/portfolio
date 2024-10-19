@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const ResumeCard = () => {
@@ -51,7 +52,7 @@ const ResumeCard = () => {
             </p>
           </div>
           <div className="flex-none h-8 w-8 relative transform rotate-90">
-            <a
+            <Link
               className="flex flex-row items-center justify-center gap-2 h-8 w-8 mt-1 rounded border hover:bg-white border-white border-solid cursor-pointer opacity-100 bg-transparent overflow-hidden"
               href="/amaan-resume.pdf"
               download="amaan-resume.pdf"
@@ -71,7 +72,7 @@ const ResumeCard = () => {
               >
                 <path d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
