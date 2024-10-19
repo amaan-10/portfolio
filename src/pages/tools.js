@@ -10,7 +10,7 @@ const AnimatedSection = dynamic(() => import("../components/AnimatedSection"), {
   ssr: false,
 });
 
-const tools = () => {
+const Tools = () => {
   const mainContentRef = useRef(null);
   const mainContentRefDelay = useRef(null);
 
@@ -73,4 +73,4 @@ const tools = () => {
   );
 };
 
-export default tools;
+export default Tools;
