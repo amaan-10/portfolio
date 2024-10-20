@@ -48,23 +48,25 @@ const Projects = () => {
       </Head>
       <main className="flex items-center text-white w-full min-h-screen">
         <Layout className="pt-0">
-          <div className="flex gap-[50px] w-full">
-            <div ref={mainContentRef}>
+          <div className="flex flex-col lg:flex-row gap-[50px] w-full">
+            <div
+              className=" w-full lg:w-max self-center lg:self-auto"
+              ref={mainContentRef}
+            >
               <ProfileCard />
             </div>
             <div
               ref={mainContentRefDelay}
-              className="flex flex-col items-center justify-center bg-[#fff0] flex-[1_0_0px] gap-0 h-min overflow-visible relative w-[1px]"
+              className="flex flex-col items-center justify-center bg-[#fff0] flex-[1_0_0px] gap-0 h-min overflow-visible relative lg:w-[1px]"
             >
               <AnimatedSection>
                 <RecentProjects />
               </AnimatedSection>
 
-              <div className="pt-28">
-                <AnimatedSection>
-                  <ContactMe />
-                </AnimatedSection>
-              </div>
+              <div className="pt-28"></div>
+              <AnimatedSection>
+                <ContactMe />
+              </AnimatedSection>
             </div>
           </div>
         </Layout>
