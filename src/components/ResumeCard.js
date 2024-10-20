@@ -7,7 +7,7 @@ const ResumeCard = () => {
   };
   return (
     <>
-      <div className="flex-none flex flex-col nowrap gap-6 h-full overflow-hidden p-[40px_20px_22px] relative w-[268px] bg-orange rounded-[10px] will-change-[transform]">
+      <div className="flex-none flex flex-col nowrap gap-6 md:h-[240px] lg:h-[260px] overflow-hidden p-[40px_20px_22px] relative w-full max-w-[350px] md:w-[268px] bg-orange rounded-[10px] will-change-[transform]">
         <div className="flex-none aspect-[1/1] h-[41px] relative w-[38px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"

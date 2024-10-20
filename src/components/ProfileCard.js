@@ -7,8 +7,8 @@ const ProfileCard = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center gap-10 h-min overflow-hidden p-0 sticky top-[40px] w-full will-change-transform ">
-        <div className="flex flex-col items-center justify-start gap-6 h-[590px] lg:h-[690px] overflow-hidden p-[30px_20px]  relative max-w-[750px] w-full lg:w-[344px] will-change-transform bg-white rounded-[16px] opacity-100">
-          <div className="flex flex-row items-center justify-center h-[100px] left-[171px] lg:left-0 overflow-visible p-0 absolute top-[-34px] lg:top-[-18px] w-[194px] z-10">
+        <div className="flex flex-col items-center justify-start gap-6 h-[525px] md:h-[590px] lg:h-[690px] overflow-hidden p-[30px_20px]  relative max-w-[750px] w-full lg:w-[344px] will-change-transform bg-white rounded-[16px] opacity-100">
+          <div className="flex flex-row items-center justify-center h-[100px] left-0 md:left-[171px] lg:left-0 overflow-visible p-0 absolute top-[-37px] md:top-[-34px] lg:top-[-18px] w-[194px] z-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -20,7 +20,7 @@ const ProfileCard = () => {
               />
             </svg>
           </div>
-          <div className=" rounded-xl cursor-pointer flex-none h-[284px] overflow-visible relative w-[240px] ">
+          <div className=" rounded-xl cursor-pointer flex-none h-[210px] md:h-[284px] overflow-visible relative w-full max-w-[240px] ">
             <div className="absolute rounded-xl top-0 right-0 bottom-0 left-0">
               <Image
                 src={profilePic}
@@ -31,7 +31,7 @@ const ProfileCard = () => {
           </div>
           <div className="flex flex-col items-center justify-between flex-[1_0_0] h-[1px] overflow-hidden p-0 relative w-full">
             <div className="flex-none h-auto relative whitespace-pre-wrap w-full break-words">
-              <p className="text-black font-bold text-4xl text-center">
+              <p className="text-black font-bold text-[28px] md:text-4xl text-center">
                 Amaan Shaikh
               </p>
             </div>
@@ -51,7 +51,7 @@ const ProfileCard = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center flex-none flex-row gap-[10px] h-[166px] overflow-visible p-4 absolute left-[-135px] top-[348px] w-[275px]">
+          <div className="flex items-center justify-center flex-none flex-row gap-[10px] h-[166px] overflow-visible p-4 absolute left-[-175px] md:left-[-135px] top-[150px] md:top-[348px] w-[275px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"

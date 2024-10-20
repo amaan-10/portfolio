@@ -4,7 +4,7 @@ const Layout = ({ children, className = "" }) => {
   return (
     <>
       <div
-        className={`w-full h-full inline-block z-0 py-10 px-[34px] lg:px-[48px] xl:px-[96px] ${className}`}
+        className={`w-full h-full inline-block z-0 py-10 px-[20px] md:px-[34px] lg:px-[48px] xl:px-[96px] ${className}`}
       >
         {children}
       </div>

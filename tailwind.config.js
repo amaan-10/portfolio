@@ -22,7 +22,7 @@ module.exports = {
     screens: {
       // Custom breakpoints
       xs: "480px", // Extra small devices
-      sm: "640px", // Small devices
+      sm: "420px", // Small devices
       md: "810px", // Medium devices (Tablets)
       lg: "1080px", // Large devices (Laptops)
       xl: "1280px", // Extra large devices (Desktops)

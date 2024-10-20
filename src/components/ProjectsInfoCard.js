@@ -4,7 +4,7 @@ import React from "react";
 const ProjectsInfoCard = () => {
   return (
     <>
-      <div className="flex flex-col gap-6 h-full justify-start overflow-hidden p-10 px-5 relative rounded-[10px] w-[500px] bg-green ">
+      <div className="flex flex-col gap-6 h-full justify-start overflow-hidden p-10 px-5 relative rounded-[10px] w-full max-w-[350px] md:w-[500px] bg-green ">
         <div className="absolute top-[-60px] right-[-36px] flex flex-row items-center justify-center gap-2.5 h-[284px] overflow-hidden w-[422px]">
           <div
             className="flex-none h-[284px] relative w-[422px]"
