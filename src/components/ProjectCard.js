@@ -10,7 +10,7 @@ const ProjectCard = ({ image, title, description, link = "/" }) => {
         <Link
           href={link}
           target="blank_"
-          className="bg-transparent hover:bg-nav rounded-lg opacity-100 cursor-pointer flex flex-row flex-nowrap h-auto justify-between overflow-hidden px-4 py-5 relative w-full transition-shadow duration-300 ease-in-out"
+          className="bg-transparent hover:bg-[#ededed] dark:hover:bg-nav rounded-lg opacity-100 cursor-pointer flex flex-row flex-nowrap h-auto justify-between overflow-hidden px-4 py-5 relative w-full transition-shadow duration-300 ease-in-out"
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
         >
@@ -53,13 +53,13 @@ const ProjectCard = ({ image, title, description, link = "/" }) => {
             <div className="flex flex-col flex-nowrap gap-2 h-min max-w-[420px] overflow-visible relative ">
               <div className="flex flex-row flex-nowrap gap-5 h-min justify-center overflow-visible p-0 relative w-min">
                 <div className="flex flex-col justify-start flex-shrink-0 opacity-100 flex-none h-auto relative whitespace-pre w-auto">
-                  <h3 className="font-poppins text-base md:text-2xl font-semibold leading-[120%] text-white">
+                  <h3 className="font-poppins text-base md:text-2xl font-semibold leading-[120%] text-black dark:text-white">
                     {title}
                   </h3>
                 </div>
               </div>
               <div className="flex flex-col justify-start h-auto relative whitespace-pre-wrap w-full break-words">
-                <div className="font-poppins text-left text-gray leading-[140%] tracking-0 mb-0 md:mb-[20px]">
+                <div className="font-poppins text-left text-[#848484] dark:text-gray leading-[140%] tracking-0 mb-0 md:mb-[20px]">
                   <p className="font-normal text-sm md:text-base">
                     {description}
                   </p>
