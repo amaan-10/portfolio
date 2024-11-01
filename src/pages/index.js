@@ -42,7 +42,7 @@ export default function Home() {
         <title>Amaan&apos;s Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex items-center  text-white w-full min-h-screen">
+      <main className="flex items-center text-black dark:text-white w-full min-h-screen">
         <Layout className="pt-0">
           <div className="flex flex-col lg:flex-row gap-[50px] w-full">
             <div

@@ -1,6 +1,7 @@
 import DetailsSection from "@/components/DetailsSection";
 import Navbar from "@/components/Navbar";
 import ProfileCard from "@/components/ProfileCard";
+import ThemeToggle from "@/components/ThemeToggle";
 import "@/styles/globals.css";
 import { Poppins } from "next/font/google";
 import Head from "next/head";
@@ -18,10 +19,11 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
-        className={`${poppins.className} font-poppins bg-black w-full min-h-screen`}
+        className={`${poppins.className} font-poppins bg-white dark:bg-black w-full min-h-screen`}
       >
         <Navbar />
         <Component {...pageProps} />
+        <ThemeToggle />
       </main>
     </>
   );

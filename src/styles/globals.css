@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html[data-theme='dark'] {
+    @apply bg-gray text-white;
+  }
+
+  html[data-theme='light'] {
+    @apply bg-white text-gray;
+  }
+}
+
+
 .fade-in-section {
     transform: translateY(-30px);
     transition: opacity 0.5s, transform 0.5s;
