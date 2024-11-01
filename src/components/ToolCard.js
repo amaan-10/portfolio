@@ -9,7 +9,7 @@ const ToolCard = ({ image, title, description, link = "/" }) => {
         <Link
           href={link}
           target="blank_"
-          className="bg-transparent hover:bg-nav rounded-lg opacity-100 will-change-auto flex items-center cursor-pointer flex-row flex-nowrap gap-4 h-min justify-start overflow-hidden p-4 relative w-full"
+          className="bg-transparent hover:bg-[#ededed] dark:hover:bg-nav rounded-lg opacity-100 will-change-auto flex items-center cursor-pointer flex-row flex-nowrap gap-4 h-min justify-start overflow-hidden p-4 relative w-full"
         >
           <div className="rounded-lg opacity-100 flex-none h-10 overflow-hidden relative w-10 will-change-auto">
             <div className="absolute inset-0 rounded-inherit">
@@ -22,12 +22,12 @@ const ToolCard = ({ image, title, description, link = "/" }) => {
           </div>
           <div className="bg-transparent opacity-100 flex flex-col flex-nowrap gap-1.5 min-h-min justify-center items-start overflow-visible p-0 relative">
             <div className="outline-none flex flex-col justify-start flex-shrink-0 transform-none opacity-100 flex-none h-auto relative whitespace-pre-wrap w-full break-words">
-              <div className="font-poppins text-[18px] font-semibold leading-[120%] tracking-normal text-left text-white">
+              <div className="font-poppins text-[18px] font-semibold leading-[120%] tracking-normal text-left text-black dark:text-white">
                 {title}
               </div>
             </div>
             <div className="flex flex-col justify-start shrink-0 transform-none opacity-100 flex-none h-auto relative whitespace-pre-wrap w-full break-words">
-              <div className="font-poppins text-xs leading-tight text-left text-gray font-normal custom-class">
+              <div className="font-poppins text-xs leading-tight text-left text-[#848484] dark:text-gray font-normal custom-class">
                 {description}
               </div>
             </div>
