@@ -6,10 +6,10 @@ const ContactMe = () => {
       <div className="flex flex-col items-center justify-center gap-[60px] h-min overflow-hidden relative w-full">
         <div className="flex items-center lg:items-start justify-center flex-none flex-col flex-nowrap gap-[10px] h-min overflow-hidden p-0 relative w-full bg-[#fff0]">
           <div className="outline-none flex flex-col  items-center lg:items-start justify-start flex-shrink-0 transform-none h-auto relative w-full whitespace-pre-wrap break-words">
-            <h1 className="font-bold text-center lg:text-left text-[52px] md:text-[94px] leading-[46px] md:leading-[90px]">
-              LET&apos;S WORK
-              <p className="font-bold text-softGray text-[52px] md:text-[94px] leading-[46px] md:leading-[90px] relative w-full whitespace-pre-wrap break-words">
-                TOGETHER
+            <h1 className="font-bold text-black dark:text-white text-center lg:text-left text-[52px] md:text-[94px] leading-[46px] md:leading-[90px]">
+              LET&apos;S
+              <p className="font-bold text-darkGray dark:text-softGray text-[52px] md:text-[94px] leading-[46px] md:leading-[90px] relative w-full whitespace-pre-wrap break-words">
+                CONNECT
               </p>
             </h1>
           </div>
@@ -19,13 +19,13 @@ const ContactMe = () => {
               <div className="flex flex-col md:flex-row gap-4 mb-4">
                 <div className="flex-1">
                   <label
-                    className="block text-gray text-sm mb-2"
+                    className="block text-[#707070] dark:text-gray text-sm mb-2"
                     htmlFor="name"
                   >
                     Name
                   </label>
                   <input
-                    className="w-full px-4 py-[10px] text-sm bg-softGray text-gray placeholder-gray rounded-lg border-none border-softGray focus:outline-none focus:ring-1 focus:ring-orange"
+                    className="w-full px-4 py-[10px] text-sm bg-softGray text-[#707070] dark:text-gray placeholder-[#707070] dark:placeholder-gray rounded-lg border-none border-softGray focus:outline-none focus:ring-1 focus:ring-orange"
                     type="text"
                     id="name"
                     placeholder="Your Name"
@@ -33,13 +33,13 @@ const ContactMe = () => {
                 </div>
                 <div className="flex-1">
                   <label
-                    className="block text-gray text-sm mb-2"
+                    className="block text-[#707070] dark:text-gray text-sm mb-2"
                     htmlFor="email"
                   >
                     Email
                   </label>
                   <input
-                    className="w-full px-4 py-[10px] text-sm bg-softGray text-gray placeholder-gray rounded-lg border-none border-softGray focus:outline-none focus:ring-1 focus:ring-orange"
+                    className="w-full px-4 py-[10px] text-sm bg-softGray text-[#707070] dark:text-gray placeholder-[#707070] dark:placeholder-gray rounded-lg border-none border-softGray focus:outline-none focus:ring-1 focus:ring-orange"
                     type="email"
                     id="email"
                     placeholder="Your@email.com"
@@ -50,13 +50,13 @@ const ContactMe = () => {
               {/* Flex container for Message */}
               <div className="mb-6">
                 <label
-                  className="block text-gray text-sm mb-2"
+                  className="block text-[#707070] dark:text-gray text-sm mb-2"
                   htmlFor="message"
                 >
                   Message
                 </label>
                 <textarea
-                  className="w-full px-4 py-[10px] text-sm bg-softGray text-gray placeholder-gray rounded-lg border-none border-softGray focus:outline-none focus:ring-1 focus:ring-orange"
+                  className="w-full px-4 py-[10px] text-sm bg-softGray text-[#707070] dark:text-gray placeholder-[#707070] dark:placeholder-gray rounded-lg border-none border-softGray focus:outline-none focus:ring-1 focus:ring-orange"
                   id="message"
                   rows="4"
                   placeholder="Message"
@@ -71,6 +71,17 @@ const ContactMe = () => {
                 >
                   Submit
                 </button>
+              </div>
+              <div>
+                <p className=" font-medium mt-5 leading-9 text-center text-black dark:text-white">
+                  OR <br /> Mail me directly on{" "}
+                  <a
+                    href="mailto:amaanshaikh.gg@gmail.com"
+                    className=" underline"
+                  >
+                    amaanshaikh.gg@gmail.com
+                  </a>
+                </p>
               </div>
             </form>
           </div>
