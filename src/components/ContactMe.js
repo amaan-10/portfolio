@@ -73,14 +73,17 @@ const ContactMe = () => {
                 </button>
               </div>
               <div>
-                <p className=" font-medium mt-5 leading-9 text-center text-black dark:text-white">
-                  OR <br /> Mail me directly on{" "}
-                  <a
-                    href="mailto:amaanshaikh.gg@gmail.com"
-                    className=" underline"
-                  >
-                    amaanshaikh.gg@gmail.com
-                  </a>
+                <p className=" font-medium mt-5 text-center text-black dark:text-white">
+                  OR
+                  <p className="mt-2 ">
+                    Mail me directly on{" "}
+                    <a
+                      href="mailto:amaanshaikh.gg@gmail.com"
+                      className="underline"
+                    >
+                      amaanshaikh.gg@gmail.com
+                    </a>
+                  </p>
                 </p>
               </div>
             </form>

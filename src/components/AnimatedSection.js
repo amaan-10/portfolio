@@ -26,7 +26,7 @@ const AnimatedSection = ({ children }) => {
         scrollTrigger: {
           trigger: element,
           start: "top 60%", // When the top of the element is 80% down the viewport
-          end: "top 30%", // When it scrolls up to 30% of the viewport
+          end: "top 50%", // When it scrolls up to 30% of the viewport
           scrub: true, // Smooth animation linked to scroll position
           toggleActions: "play none none none", // Play only on scroll down
           once: true, // Ensure the animation triggers only once
