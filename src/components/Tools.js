@@ -14,10 +14,10 @@ const Tools = () => {
       <div className="flex flex-col items-center justify-center gap-[60px] h-min overflow-hidden relative w-full">
         <div className="flex items-center lg:items-start justify-center flex-none flex-col flex-nowrap gap-[10px] h-min overflow-hidden p-0 relative w-full bg-[#fff0]">
           <div className="outline-none flex flex-col  items-center lg:items-start justify-start flex-shrink-0 transform-none h-auto relative w-full whitespace-pre-wrap break-words">
-            <h1 className="font-bold text-center lg:text-left text-[52px] md:text-[94px] leading-[46px] md:leading-[90px]">
-              PREMIUM
-              <p className="font-bold text-softGray text-[52px] md:text-[94px] leading-[46px] md:leading-[90px] relative w-full whitespace-pre-wrap break-words">
-                TOOLS
+            <h1 className="font-bold text-black dark:text-white text-center lg:text-left text-[52px] md:text-[94px] leading-[46px] md:leading-[90px]">
+              TECHNICAL
+              <p className="font-bold text-darkGray dark:text-softGray text-[52px] md:text-[94px] leading-[46px] md:leading-[90px] relative w-full whitespace-pre-wrap break-words">
+                SKILLS
               </p>
             </h1>
           </div>
