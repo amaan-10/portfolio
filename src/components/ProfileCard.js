@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import profilePic from "../assets/profile-picture.jpeg";
+import profilePic from "../assets/pfp-portfolio.png";
 import { EmailIcon, GithubIcon, InstagramIcon, TwitterIcon } from "./Icons";
 
 const ProfileCard = () => {
@@ -44,10 +44,10 @@ const ProfileCard = () => {
                 </p>
               </div>
               <div className="flex items-center justify-center flex-none flex-row flex-nowrap gap-[16px] h-min overflow-hidden p-0 relative w-full">
-                <GithubIcon />
-                <TwitterIcon />
-                <InstagramIcon />
-                <EmailIcon />
+                <GithubIcon link={"https://github.com/amaan-10"} />
+                <TwitterIcon link={"https://x.com"} />
+                <InstagramIcon link={"https://www.instagram.com"} />
+                <EmailIcon link={"mailto:amaanshaikh.gg@gmail.com"} />
               </div>
             </div>
           </div>
