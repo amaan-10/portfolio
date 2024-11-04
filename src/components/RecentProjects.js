@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import EmployMeeImage from "../assets/employ-mee-image.png";
+import SpendLessImage from "../assets/spend-less-website.png";
 import QuizImage from "../assets/quiz-website-image.png";
 import PortfolioImage from "../assets/portfolio-website.png";
 import ProjectCard from "./ProjectCard";
@@ -24,6 +25,12 @@ const RecentProjects = () => {
               title={"Employ-Mee"}
               description={"Job Portal App"}
               link={"https://employ-mee.vercel.app/"}
+            />
+            <ProjectCard
+              image={SpendLessImage}
+              title={"SpendLess"}
+              description={"A Finance Manager App"}
+              link={"https://spend-less.vercel.app/"}
             />
             <ProjectCard
               image={QuizImage}
