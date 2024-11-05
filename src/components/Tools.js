@@ -1,5 +1,9 @@
 import Image from "next/image";
 import React from "react";
+import JavaScript from "../assets/javascript-logo.png";
+import TypeScript from "../assets/typescript-logo.png";
+import BootStrap from "../assets/bootstrap-logo.png";
+import TailWind from "../assets/tailwind-logo.png";
 import Nextjs from "../assets/nextjs-logo.png";
 import Reactjs from "../assets/react-logo.png";
 import Nodejs from "../assets/nodejs-logo.png";
@@ -23,26 +27,52 @@ const Tools = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-[10px] auto-rows-min justify-start w-full relative p-0">
             <ToolCard
+              image={JavaScript}
+              title={"JavaScript"}
+              description={
+                "A programming language and core technology of the Web"
+              }
+              link={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
+            />
+            <ToolCard
+              image={TypeScript}
+              title={"TypeScript"}
+              description={"TS extends JS by adding types to the language."}
+              link={"https://www.typescriptlang.org/"}
+            />
+            <ToolCard
+              image={BootStrap}
+              title={"Bootstrap"}
+              description={"Mobile-first front-end CSS framework"}
+              link={"https://getbootstrap.com/"}
+            />
+            <ToolCard
+              image={TailWind}
+              title={"Tailwind"}
+              description={"A utility-first CSS framework."}
+              link={"https://tailwindcss.com/"}
+            />
+            <ToolCard
               image={Reactjs}
-              title={"Reactjs"}
+              title={"ReactJS"}
               description={"The library for web and UI"}
               link={"https://react.dev/"}
             />
             <ToolCard
               image={Nextjs}
-              title={"Nextjs"}
+              title={"NextJS"}
               description={"React framework"}
               link={"https://nextjs.org/"}
             />
             <ToolCard
               image={Nodejs}
-              title={"Nodejs"}
+              title={"NodeJS"}
               description={"Used for server-side scripting"}
               link={"https://nodejs.org/en"}
             />
             <ToolCard
               image={Expressjs}
-              title={"Expressjs"}
+              title={"ExpressJS"}
               description={"Node.js web application framework"}
               link={"https://expressjs.com/"}
             />
