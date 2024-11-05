@@ -52,7 +52,7 @@ const ProjectsInfoCard = () => {
           }}
         >
           <div className="outline-none flex flex-col justify-start flex-shrink-0 transform-none text-black text-2xl font-medium p-1 flex-none h-auto relative whitespace-pre-wrap w-full break-words">
-            <p>REACTJS, NODE JS,</p>
+            <p>NEXT JS,</p>
             <p>MERN STACK PROJECTS</p>
           </div>
           <div className="flex-none h-8 relative w-8">

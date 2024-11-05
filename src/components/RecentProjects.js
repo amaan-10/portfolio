@@ -23,13 +23,13 @@ const RecentProjects = () => {
             <ProjectCard
               image={EmployMeeImage}
               title={"Employ-Mee"}
-              description={"Job Portal App"}
+              description={"A Job Portal Website"}
               link={"https://employ-mee.vercel.app/"}
             />
             <ProjectCard
               image={SpendLessImage}
               title={"SpendLess"}
-              description={"A Finance Manager App"}
+              description={"A Finance Manager Website"}
               link={"https://spend-less.vercel.app/"}
             />
             <ProjectCard
