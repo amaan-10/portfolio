@@ -86,6 +86,57 @@ export const ToolsIcon = () => {
   );
 };
 
+export const EducationIcon = () => {
+  return (
+    <div>
+      <div className="absolute inset-0 opacity-50"></div>
+      <div className="absolute inset-0 flex items-center justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={24}
+          height={24}
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="var(--token-182ee8b3-4984-4a8e-9e60-5c8c5b4cb4cf, rgb(255, 255, 255))"
+          strokeWidth={2}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          style={{ width: "100%", height: "100%" }}
+        >
+          <rect x={2} y={7} width={20} height={14} rx={2} ry={2} />
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+        </svg>
+      </div>
+      <span className="absolute mt-2 w-max -translate-x-1/2  bg-[#dedede] dark:bg-nav text-[#333333] dark:text-white text-sm px-2 py-1 rounded-xl opacity-0 group-hover:opacity-100 origin-center ease-in-out  top-8 left-1/2 transition-all duration-300 transform -translate-y-full group-hover:translate-y-0 ">
+        Education
+      </span>
+    </div>
+  );
+};
+
+export const EduIcon = () => {
+  return (
+    <div className="flex-none h-auto w-auto relative">
+      <div className="flex items-center cursor-pointer flex-row flex-nowrap gap-[10px] h-auto justify-center overflow-hidden p-[6px] relative no-underline w-auto will-change-transform">
+        <svg
+          stroke="var(--token-733bbd01-4431-42a0-b8b0-48fb9de5f3db, rgb(244, 108, 56))"
+          fill="none"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          width={24}
+          height={24}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+          <path d="M6 12v5c3 3 9 3 12 0v-5" />
+        </svg>
+      </div>
+    </div>
+  );
+};
+
 export const GithubIcon = ({ link = "/" }) => {
   return (
     <div className="flex-none h-auto w-auto relative">
