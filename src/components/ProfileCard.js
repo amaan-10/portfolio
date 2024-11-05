@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import profilePic from "../assets/pfp-portfolio.png";
+import profilePic from "../assets/pfp-portfolio.jpg";
 //import profilePic from "../assets/profile-picture.jpeg";
 import { EmailIcon, GithubIcon, InstagramIcon, TwitterIcon } from "./Icons";
 
