@@ -1,12 +1,13 @@
 import Link from "next/link";
 import React, { useEffect, useRef } from "react";
-import { HomeIcon, ProjectsIcon, ToolsIcon } from "./Icons";
+import { EducationIcon, HomeIcon, ProjectsIcon, ToolsIcon } from "./Icons";
 import gsap from "gsap";
 
 const Navbar = () => {
   const Logo = useRef(null);
   const LogoDelay = useRef(null);
   const LogoDelay2 = useRef(null);
+  const LogoDelay3 = useRef(null);
 
   useEffect(() => {
     // Fade-in effect on window load
@@ -45,6 +46,18 @@ const Navbar = () => {
         delay: 0.4,
       }
     );
+    // Fade-in effect on window load
+    gsap.fromTo(
+      LogoDelay3.current, // Use the ref to target the specific div
+      { opacity: 0, y: -8 }, // Initial state
+      {
+        opacity: 1, // Final state
+        y: 0, // Final scale
+        duration: 1, // Duration of the animation
+        ease: "power2.out", // Easing function for smooth effect
+        delay: 0.5,
+      }
+    );
   }, []);
   return (
     <>
@@ -61,12 +74,19 @@ const Navbar = () => {
             <Link
               ref={LogoDelay}
               className="flex-none h-6 relative w-6 group"
+              href="/education"
+            >
+              <EducationIcon />
+            </Link>
+            <Link
+              ref={LogoDelay2}
+              className="flex-none h-6 relative w-6 group"
               href="/projects"
             >
               <ProjectsIcon />
             </Link>
             <Link
-              ref={LogoDelay2}
+              ref={LogoDelay3}
               className="flex-none h-6 relative w-6 group"
               href="/tools"
             >
