@@ -76,7 +76,7 @@ const ContactMe = () => {
                 <p className=" font-medium mt-5 text-center text-black dark:text-white">
                   OR
                   <p className="mt-2 ">
-                    Mail me directly on{" "}
+                    Mail me directly at{" "}
                     <a
                       href="mailto:amaanshaikh.gg@gmail.com"
                       className="underline"
