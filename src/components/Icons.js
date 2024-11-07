@@ -33,7 +33,7 @@ export const HomeIcon = () => {
 export const EducationIcon = () => {
   return (
     <div>
-      <div className="absolute inset-0 opacity-50"></div>
+      <div className="absolute inset-0 opacity-50 "></div>
       <div className="absolute inset-0 flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
