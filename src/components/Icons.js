@@ -30,6 +30,35 @@ export const HomeIcon = () => {
   );
 };
 
+export const EducationIcon = () => {
+  return (
+    <div>
+      <div className="absolute inset-0 opacity-50"></div>
+      <div className="absolute inset-0 flex items-center justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={24}
+          height={24}
+          viewBox="0 0 24 24"
+          fill="none"
+          className="stroke-current text-[#333333] dark:text-white"
+          stroke="var(--token-182ee8b3-4984-4a8e-9e60-5c8c5b4cb4cf, rgb(255, 255, 255))"
+          strokeWidth={2}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          style={{ width: "100%", height: "100%" }}
+        >
+          <rect x={2} y={7} width={20} height={14} rx={2} ry={2} />
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+        </svg>
+      </div>
+      <span className="absolute mt-2 w-max -translate-x-1/2  bg-[#dedede] dark:bg-nav text-[#333333] dark:text-white text-sm px-2 py-1 rounded-xl opacity-0 group-hover:opacity-100 origin-center ease-in-out  top-8 left-1/2 transition-all duration-300 transform -translate-y-full group-hover:translate-y-0 ">
+        Education
+      </span>
+    </div>
+  );
+};
+
 export const ProjectsIcon = () => {
   return (
     <div>
@@ -81,34 +110,6 @@ export const ToolsIcon = () => {
       </div>
       <span className="absolute mt-2 w-max -translate-x-1/2  bg-[#dedede] dark:bg-nav text-[#333333] dark:text-white text-sm px-2 py-1 rounded-xl opacity-0 group-hover:opacity-100 origin-center ease-in-out  top-8 left-1/2 transition-all duration-300 transform -translate-y-full group-hover:translate-y-0 ">
         Tools
-      </span>
-    </div>
-  );
-};
-
-export const EducationIcon = () => {
-  return (
-    <div>
-      <div className="absolute inset-0 opacity-50"></div>
-      <div className="absolute inset-0 flex items-center justify-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width={24}
-          height={24}
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="var(--token-182ee8b3-4984-4a8e-9e60-5c8c5b4cb4cf, rgb(255, 255, 255))"
-          strokeWidth={2}
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          style={{ width: "100%", height: "100%" }}
-        >
-          <rect x={2} y={7} width={20} height={14} rx={2} ry={2} />
-          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-        </svg>
-      </div>
-      <span className="absolute mt-2 w-max -translate-x-1/2  bg-[#dedede] dark:bg-nav text-[#333333] dark:text-white text-sm px-2 py-1 rounded-xl opacity-0 group-hover:opacity-100 origin-center ease-in-out  top-8 left-1/2 transition-all duration-300 transform -translate-y-full group-hover:translate-y-0 ">
-        Education
       </span>
     </div>
   );
