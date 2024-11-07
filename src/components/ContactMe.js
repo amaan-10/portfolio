@@ -1,6 +1,32 @@
 import React from "react";
 
 const ContactMe = () => {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = {
+      name: event.target.name.value,
+      email: event.target.email.value,
+      message: event.target.message.value,
+    };
+
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    console.log(formData);
+
+    if (response.ok) {
+      alert("Message sent successfully!");
+    } else {
+      alert("Failed to send message.");
+    }
+  };
+
   return (
     <>
       <div className="flex flex-col items-center justify-center gap-[60px] h-min overflow-hidden relative w-full">
@@ -14,7 +40,10 @@ const ContactMe = () => {
             </h1>
           </div>
           <div className="flex lg:block justify-center items-center lg:items-start h-full w-full">
-            <form className=" p-6 rounded-lg shadow-lg w-[696px] lg:w-full max-w-[696px]">
+            <form
+              onSubmit={handleSubmit}
+              className=" p-6 rounded-lg shadow-lg w-[696px] lg:w-full max-w-[696px]"
+            >
               {/* Flex container for Name and Email */}
               <div className="flex flex-col md:flex-row gap-4 mb-4">
                 <div className="flex-1">
