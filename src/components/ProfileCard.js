@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import profilePic from "../assets/pfp-portfolio.jpg";
+import profilePic from "../assets/amaan pfp.jpg";
 //import profilePic from "../assets/profile-picture.jpeg";
 import { EmailIcon, GithubIcon, InstagramIcon, TwitterIcon } from "./Icons";
 
@@ -8,7 +8,7 @@ const ProfileCard = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center gap-10 h-min overflow-hidden p-0 sticky top-[40px] w-full will-change-transform ">
-        <div className="flex flex-col items-center justify-start gap-6 h-[525px] md:h-[590px] lg:h-[690px] overflow-hidden p-[30px_20px]  relative max-w-[750px] w-full lg:w-[344px] will-change-transform bg-[#EDEDED] dark:bg-white rounded-[16px] opacity-100">
+        <div className="flex flex-col items-center justify-start gap-6 h-[525px] md:h-[590px] lg:h-[690px] overflow-hidden p-[30px_20px]  relative max-w-[750px] w-full lg:w-[344px] will-change-transform bg-[#EDEDED] rounded-[16px] opacity-100">
           <div className="flex flex-row items-center justify-center h-[100px] left-0 md:left-[171px] lg:left-0 overflow-visible p-0 absolute top-[-37px] md:top-[-34px] lg:top-[-18px] w-[194px] z-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
