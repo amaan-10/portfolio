@@ -36,7 +36,7 @@ const RecentProjects = () => {
               image={QuizImage}
               title={"Quiz Website"}
               description={"A Quiz Website"}
-              link={"https://quiz-website-t7cq.onrender.com/"}
+              link={"https://quiz-website-purple.vercel.app/"}
             />
             <ProjectCard
               image={PortfolioImage}
