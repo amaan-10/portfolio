@@ -1,8 +1,14 @@
 import Image from "next/image";
 import React from "react";
-import profilePic from "../assets/amaan pfp.jpg";
+import profilePic from "../assets/amaan-pfp.jpg";
 //import profilePic from "../assets/profile-picture.jpeg";
-import { EmailIcon, GithubIcon, InstagramIcon, TwitterIcon } from "./Icons";
+import {
+  EmailIcon,
+  GithubIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  TwitterIcon,
+} from "./Icons";
 
 const ProfileCard = () => {
   return (
@@ -48,6 +54,7 @@ const ProfileCard = () => {
                 <GithubIcon link={"https://github.com/amaan-10"} />
                 <TwitterIcon link={"https://x.com"} />
                 <InstagramIcon link={"https://www.instagram.com"} />
+                <LinkedinIcon link={"https://www.linkedin.com/in/10-amaan"} />
                 <EmailIcon link={"mailto:amaanshaikh.gg@gmail.com"} />
               </div>
             </div>
