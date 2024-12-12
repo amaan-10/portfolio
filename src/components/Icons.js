@@ -141,7 +141,7 @@ export const EduIcon = () => {
 export const GithubIcon = ({ link = "/" }) => {
   return (
     <div className="flex-none h-auto w-auto relative">
-      <Link href={link} target="blank_">
+      <Link href={link} target="_blank">
         <div className="flex items-center cursor-pointer flex-row flex-nowrap gap-[10px] h-auto justify-center overflow-hidden p-[6px] relative no-underline w-auto will-change-transform">
           <div className="">
             <svg
@@ -165,7 +165,7 @@ export const GithubIcon = ({ link = "/" }) => {
 export const TwitterIcon = ({ link = "/" }) => {
   return (
     <div className="flex-none h-auto w-auto relative">
-      <Link href={link} target="blank_">
+      <Link href={link} target="_blank">
         <div className="flex items-center cursor-pointer flex-row flex-nowrap gap-[10px] h-auto justify-center overflow-hidden p-[6px] relative no-underline w-auto will-change-transform">
           <div className="">
             <svg
@@ -192,7 +192,7 @@ export const TwitterIcon = ({ link = "/" }) => {
 export const InstagramIcon = ({ link = "/" }) => {
   return (
     <div className="flex-none h-auto w-auto relative">
-      <Link href={link} target="blank_">
+      <Link href={link} target="_blank">
         <div className="flex items-center cursor-pointer flex-row flex-nowrap gap-[10px] h-auto justify-center overflow-hidden p-[6px] relative no-underline w-auto will-change-transform">
           <div className="">
             <svg
@@ -221,7 +221,7 @@ export const InstagramIcon = ({ link = "/" }) => {
 export const LinkedinIcon = ({ link = "/" }) => {
   return (
     <div className="flex-none h-auto w-auto relative">
-      <Link href={link} target="blank_">
+      <Link href={link} target="_blank">
         <div className="flex items-center cursor-pointer flex-row flex-nowrap gap-[10px] h-auto justify-center overflow-hidden p-[6px] relative no-underline w-auto will-change-transform">
           <div className="">
             <svg
@@ -244,7 +244,7 @@ export const LinkedinIcon = ({ link = "/" }) => {
 export const EmailIcon = ({ link = "/" }) => {
   return (
     <div className="flex-none h-auto w-auto relative">
-      <Link href={link} target="blank_">
+      <Link href={link} target="_blank">
         <div className="flex items-center cursor-pointer flex-row flex-nowrap gap-[10px] h-auto justify-center overflow-hidden p-[6px] relative no-underline w-auto will-change-transform">
           <div className="">
             <svg
