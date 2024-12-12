@@ -5,6 +5,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 import "@/styles/globals.css";
 import { Poppins } from "next/font/google";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function App({ Component, pageProps }) {
       >
         <Navbar />
         <Component {...pageProps} />
+        <Analytics />
         <ThemeToggle />
       </main>
     </>
