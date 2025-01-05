@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState("light"); // Default to 'light' theme
+  const [theme, setTheme] = useState("dark"); // Default to 'dark' theme
 
   // Use useEffect to check localStorage only on the client side
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light";
+    const savedTheme = localStorage.getItem("theme") || "dark";
     setTheme(savedTheme);
     document.documentElement.classList.toggle("dark", savedTheme === "dark");
   }, []);
