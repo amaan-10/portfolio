@@ -6,6 +6,7 @@ import "@/styles/globals.css";
 import { Poppins } from "next/font/google";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
         <Analytics />
         <ThemeToggle />
+        <Footer />
       </main>
     </>
   );

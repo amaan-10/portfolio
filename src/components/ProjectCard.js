@@ -41,7 +41,7 @@ const ProjectCard = ({ image, title, description, link = "/" }) => {
             </svg>
           </div>
           <div className="flex flex-row flex-nowrap items-center justify-start gap-5 h-min overflow-hidden relative ">
-            <div className="rounded-lg opacity-100 flex-none h-20 md:h-28 w-20 md:w-28 overflow-hidden relative will-change-transform">
+            <div className="rounded-lg opacity-100 flex-none h-20 md:h-28 w-20 md:w-40 overflow-hidden relative will-change-transform">
               <div className="absolute rounded-inherit top-0 right-0 bottom-0 left-0">
                 <Image
                   src={image}
