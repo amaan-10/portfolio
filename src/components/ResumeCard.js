@@ -1,13 +1,122 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import gsap, { Elastic } from "gsap";
 
 const ResumeCard = () => {
-  const openResume = () => {
-    window.open("/amaan-resume.pdf", "_blank", "noopener,noreferrer");
+  // const openResume = () => {
+  //   window.open("/amaan-resume.pdf", "_blank", "noopener,noreferrer");
+  // };
+
+  const buttonRef = useRef();
+
+  useEffect(() => {
+    const button = buttonRef.current;
+    if (!button) return;
+
+    const duration = 3000;
+    const svg = button.querySelector("svg");
+    const svgPath = new Proxy(
+      {
+        y: null,
+        smoothing: null,
+      },
+      {
+        set(target, key, value) {
+          target[key] = value;
+          if (target.y !== null && target.smoothing !== null) {
+            svg.innerHTML = getPath(target.y, target.smoothing, null);
+          }
+          return true;
+        },
+        get(target, key) {
+          return target[key];
+        },
+      }
+    );
+
+    button.style.setProperty("--duration", duration);
+
+    svgPath.y = 20;
+    svgPath.smoothing = 0;
+
+    const handleClick = (e) => {
+      e.preventDefault();
+
+      if (!button.classList.contains("loading")) {
+        button.classList.add("loading");
+
+        gsap.to(svgPath, {
+          smoothing: 0.3,
+          duration: (duration * 0.065) / 1000,
+        });
+
+        gsap.to(svgPath, {
+          y: 12,
+          duration: (duration * 0.265) / 1000,
+          delay: (duration * 0.065) / 1000,
+          ease: Elastic.easeOut.config(1.12, 0.4),
+        });
+
+        setTimeout(() => {
+          svg.innerHTML = getPath(0, 0, [
+            [3, 14],
+            [8, 19],
+            [21, 6],
+          ]);
+          setTimeout(() => {
+            window.open("/amaan-resume.pdf", "_blank", "noopener,noreferrer");
+          }, 500);
+        }, 1000);
+      }
+    };
+
+    button.addEventListener("click", handleClick);
+
+    return () => {
+      button.removeEventListener("click", handleClick);
+    };
+  }, []);
+
+  const getPoint = (point, i, a, smoothing) => {
+    const cp = (current, previous, next, reverse) => {
+      const p = previous || current;
+      const n = next || current;
+      const o = {
+        length: Math.sqrt(Math.pow(n[0] - p[0], 2) + Math.pow(n[1] - p[1], 2)),
+        angle: Math.atan2(n[1] - p[1], n[0] - p[0]),
+      };
+      const angle = o.angle + (reverse ? Math.PI : 0);
+      const length = o.length * smoothing;
+      return [
+        current[0] + Math.cos(angle) * length,
+        current[1] + Math.sin(angle) * length,
+      ];
+    };
+
+    const cps = cp(a[i - 1], a[i - 2], point, false);
+    const cpe = cp(point, a[i - 1], a[i + 1], true);
+    return `C ${cps[0]},${cps[1]} ${cpe[0]},${cpe[1]} ${point[0]},${point[1]}`;
   };
+
+  const getPath = (update, smoothing, pointsNew) => {
+    const points = pointsNew || [
+      [4, 12],
+      [12, update],
+      [20, 12],
+    ];
+    const d = points.reduce(
+      (acc, point, i, a) =>
+        i === 0
+          ? `M ${point[0]},${point[1]}`
+          : `${acc} ${getPoint(point, i, a, smoothing)}`,
+      ""
+    );
+    return `<path d="${d}" />`;
+  };
+
   return (
     <>
-      <div className="flex-none flex flex-col nowrap gap-6 md:h-[240px] lg:h-[260px] overflow-hidden p-[40px_20px_22px] relative w-full max-w-[350px] md:w-[268px] bg-orange rounded-[10px] will-change-[transform]">
+      {/* <div className="flex-none flex flex-col nowrap gap-6 md:h-[240px] lg:h-[260px] overflow-hidden p-[40px_20px_22px] relative w-full max-w-[350px] md:w-[268px] bg-orange rounded-[10px] will-change-[transform]">
         <div className="flex-none aspect-[1/1] h-[41px] relative w-[38px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +189,30 @@ const ResumeCard = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
+      <Link
+        // onClick={openResume}
+        ref={buttonRef}
+        href="/amaan-resume.pdf"
+        // download="amaan-resume.pdf"
+        target="_blank"
+        className="button dark"
+      >
+        <ul>
+          <li>&#68;ownload CV</li>
+          <li>&#68;ownloading CV</li>
+          <li>Open File</li>
+        </ul>
+        <div>
+          <svg
+            // ref={svgRef}
+            // dangerouslySetInnerHTML={{
+            //   __html: getPath(svgPath.y, svgPath.smoothing, null),
+            // }}
+            viewBox="0 0 24 24"
+          ></svg>
+        </div>
+      </Link>
     </>
   );
 };
