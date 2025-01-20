@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import HTML from "../assets/html-logo.png";
+import CSS from "../assets/css-logo.png";
 import JavaScript from "../assets/javascript-logo.png";
 import TypeScript from "../assets/typescript-logo.png";
 import BootStrap from "../assets/bootstrap-logo.png";
@@ -8,7 +10,11 @@ import Nextjs from "../assets/nextjs-logo.png";
 import Reactjs from "../assets/react-logo.png";
 import Nodejs from "../assets/nodejs-logo.png";
 import Expressjs from "../assets/express-logo.png";
+import MySQL from "../assets/mysql-logo.png";
 import MongoDB from "../assets/mongodb-logo.png";
+import CPP from "../assets/cpp-logo.png";
+import Python from "../assets/python-logo.png";
+import Java from "../assets/java-logo.png";
 import ChatGPT from "../assets/chatgpt-logo.png";
 import ToolCard from "./ToolCard";
 
@@ -26,6 +32,22 @@ const Tools = () => {
             </h1>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-[10px] auto-rows-min justify-start w-full relative p-0">
+            <ToolCard
+              image={HTML}
+              title={"HTML"}
+              description={
+                "A standard markup language used to structure content on the Web"
+              }
+              link={"https://developer.mozilla.org/en-US/docs/Web/HTML"}
+            />
+            <ToolCard
+              image={CSS}
+              title={"CSS"}
+              description={
+                "A stylesheet language used to style and enhance website presentation"
+              }
+              link={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
+            />
             <ToolCard
               image={JavaScript}
               title={"JavaScript"}
@@ -77,10 +99,38 @@ const Tools = () => {
               link={"https://expressjs.com/"}
             />
             <ToolCard
+              image={MySQL}
+              title={"MySQL"}
+              description={
+                "An open-source relational database management system"
+              }
+              link={"https://www.mysql.com/"}
+            />
+            <ToolCard
               image={MongoDB}
               title={"MongoDB"}
               description={"A NoSQL document database"}
               link={"https://www.mongodb.com/"}
+            />
+            <ToolCard
+              image={CPP}
+              title={"C++"}
+              description={"An object-oriented programming language"}
+              link={"https://isocpp.org/"}
+            />
+            <ToolCard
+              image={Python}
+              title={"Python"}
+              description={"A general-purpose programming language"}
+              link={"https://www.python.org/"}
+            />
+            <ToolCard
+              image={Java}
+              title={"Java"}
+              description={
+                "A class-based, object-oriented programming language"
+              }
+              link={"https://www.java.com/en"}
             />
             <ToolCard
               image={ChatGPT}
