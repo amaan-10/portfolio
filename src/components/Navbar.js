@@ -88,7 +88,7 @@ const Navbar = () => {
             <Link
               ref={LogoDelay3}
               className="flex-none h-6 relative w-6 group"
-              href="/tools"
+              href="/skills"
             >
               <ToolsIcon />
             </Link>

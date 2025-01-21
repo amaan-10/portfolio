@@ -42,7 +42,7 @@ const ContactMe = () => {
           <div className="flex lg:block justify-center items-center lg:items-start h-full w-full">
             <form
               onSubmit={handleSubmit}
-              className=" p-6 rounded-lg shadow-lg w-[696px] lg:w-full max-w-[696px]"
+              className=" p-6 rounded-lg w-[696px] lg:w-full max-w-[696px]"
             >
               {/* Flex container for Name and Email */}
               <div className="flex flex-col md:flex-row gap-4 mb-4">

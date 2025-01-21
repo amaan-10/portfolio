@@ -109,7 +109,7 @@ export const ToolsIcon = () => {
         </svg>
       </div>
       <span className="absolute mt-2 w-max -translate-x-1/2  bg-[#dedede] dark:bg-nav text-[#333333] dark:text-white text-sm px-2 py-1 rounded-xl opacity-0 group-hover:opacity-100 origin-center ease-in-out  top-8 left-1/2 transition-all duration-300 transform -translate-y-full group-hover:translate-y-0 ">
-        Tools
+        Skills
       </span>
     </div>
   );
