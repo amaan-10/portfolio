@@ -10,7 +10,7 @@ const AnimatedSection = dynamic(() => import("../components/AnimatedSection"), {
   ssr: false,
 });
 
-const Tools = () => {
+const Skills = () => {
   const mainContentRef = useRef(null);
   const mainContentRefDelay = useRef(null);
 
@@ -43,7 +43,7 @@ const Tools = () => {
     <>
       <Head>
         <meta name="viewport" content="width-device width, initial-scale=1" />
-        <title>Amaan | Tools</title>
+        <title>Amaan | Skills</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex items-center text-white w-full min-h-screen">
@@ -75,4 +75,4 @@ const Tools = () => {
   );
 };
 
-export default Tools;
+export default Skills;
