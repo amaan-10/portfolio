@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import profilePic from "../assets/amaan-pfp.jpg";
-//import profilePic from "../assets/profile-picture.jpeg";
+import profilePic from "../assets/amaan-pfp-orange.png";
 import {
   EmailIcon,
   GithubIcon,
@@ -27,7 +26,7 @@ const ProfileCard = () => {
               />
             </svg>
           </div>
-          <div className=" rounded-xl cursor-pointer flex-none h-[210px] md:h-[284px] overflow-visible relative w-full max-w-[240px] ">
+          <div className=" rounded-xl cursor-pointer flex-none h-[235px] md:h-[284px] overflow-visible relative w-full max-w-[240px] ">
             <div className="absolute rounded-xl top-0 right-0 bottom-0 left-0">
               <Image
                 src={profilePic}
@@ -60,7 +59,7 @@ const ProfileCard = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center flex-none flex-row gap-[10px] h-[166px] overflow-visible p-4 absolute left-[-175px] top-[150px] md:top-[220px] w-[275px]">
+          <div className="flex items-center justify-center flex-none flex-row gap-[10px] h-[166px] overflow-visible p-4 absolute left-[-175px] top-[170px] md:top-[220px] w-[275px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
