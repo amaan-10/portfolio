@@ -15,8 +15,8 @@ const Info = () => {
               </p>
             </h1>
           </div>
-          <div className="outline-none text-center lg:text-left justify-start flex-shrink-0 flex-none h-auto max-w-[480px] relative whitespace-pre-wrap w-full break-words text-base md:text-lg text-[#474747] dark:text-gray">
-            An AI & Data Science student eager to become a
+          <div className="outline-none text-center lg:text-justify justify-start flex-shrink-0 flex-none h-auto max-w-[540px] relative whitespace-pre-wrap w-full break-words text-base md:text-lg text-[#474747] dark:text-gray">
+            An AI & Data Science student eager to become a{" "}
             <span className="inline-block text-orange  font-semibold">
               Software Developer
             </span>

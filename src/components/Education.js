@@ -36,7 +36,7 @@ const Education = () => {
                   <p className="ml-auto mr-0 sm:mr-4 mb-2 mt-2  text-base font-normal leading-none text-darkGray dark:text-gray">
                     Pune, IN
                   </p>
-                  <p className="mt-2 font-normal text-base sm:text-lg text-darkGray dark:text-gray">
+                  <p className="mt-2 font-normal text-justify text-base sm:text-lg text-darkGray dark:text-gray">
                     Currently pursuing a B.E. degree in Artificial Intellienge &
                     Data Science at Dr. D. Y. Patil Institute of Technology,
                     Pimpri, Pune, with an anticipated graduation in 2025.
@@ -44,7 +44,7 @@ const Education = () => {
                     practical aspects of software engineering.
                   </p>
                   <p className="ml-auto mr-0 sm:mr-4 mt-6 sm:mt-2 mb-2 leading-none text-black dark:text-white">
-                    CGPA: 8.29 | 2021 - 2025
+                    CGPA: 8.38 | 2021 - 2025
                   </p>
                 </div>
               </li>
@@ -68,7 +68,7 @@ const Education = () => {
                   <p className="ml-auto mr-0 sm:mr-4 mb-2 mt-2 sm:mt-0 text-base font-normal leading-none text-darkGray dark:text-gray">
                     Pune, IN
                   </p>
-                  <p className="mt-2 font-normal text-base sm:text-lg text-darkGray dark:text-gray">
+                  <p className="mt-2 font-normal text-justify text-base sm:text-lg text-darkGray dark:text-gray">
                     Completed 12th grade in Science (PCM + IT) at Saraswati
                     Vidyalaya Union Junior College, Pune under the MSBSHSE
                     board, with a strong emphasis on problem-solving, critical
