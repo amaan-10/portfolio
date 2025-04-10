@@ -4,7 +4,7 @@ import EmployMeeImage from "../assets/employ-mee-image.png";
 import SpendLessImage from "../assets/spend-less-website.png";
 import CuraLinkImage from "../assets/curalink-image.png";
 import QuizImage from "../assets/quiz-website-image.png";
-import PortfolioImage from "../assets/portfolio-website.png";
+import SARAImage from "../assets/sara-mov-website.png";
 import ProjectCard from "./ProjectCard";
 
 const RecentProjects = () => {
@@ -22,16 +22,22 @@ const RecentProjects = () => {
           </div>
           <div className="flex flex-col flex-none flex-nowrap items-center lg:items-start content-start gap-0 h-min justify-start p-0 relative w-full">
             <ProjectCard
-              image={EmployMeeImage}
-              title={"Employ-Mee"}
-              description={"A Job Portal Website"}
-              link={"https://employ-mee.vercel.app/"}
-            />
-            <ProjectCard
               image={SpendLessImage}
               title={"SpendLess"}
               description={"A Finance Manager Website"}
               link={"https://spend-less.vercel.app/"}
+            />
+            <ProjectCard
+              image={SARAImage}
+              title={"SARA.mov"}
+              description={"Search Analysis Recommend Application for Movies"}
+              link={"https://sara-mov.vercel.app/"}
+            />
+            <ProjectCard
+              image={EmployMeeImage}
+              title={"Employ-Mee"}
+              description={"A Job Portal Website"}
+              link={"https://employ-mee.vercel.app/"}
             />
             <ProjectCard
               image={CuraLinkImage}
@@ -44,11 +50,6 @@ const RecentProjects = () => {
               title={"Quiz Website"}
               description={"A Quiz Website"}
               link={"https://quiz-website-purple.vercel.app/"}
-            />
-            <ProjectCard
-              image={PortfolioImage}
-              title={"Amaan's Portfolio"}
-              description={"A Portfolio Website"}
             />
           </div>
         </div>

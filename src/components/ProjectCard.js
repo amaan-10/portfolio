@@ -41,15 +41,18 @@ const ProjectCard = ({ image, title, description, link = "/" }) => {
             </svg>
           </div>
           <div className="flex flex-row flex-nowrap items-center justify-start gap-5 h-min overflow-hidden relative ">
-            <div className="rounded-lg opacity-100 flex-none h-20 md:h-28 w-20 md:w-40 overflow-hidden relative will-change-transform">
-              <div className="absolute rounded-inherit top-0 right-0 bottom-0 left-0">
-                <Image
-                  src={image}
-                  alt={title}
-                  className="block w-full h-full rounded-xl object-center object-cover"
-                ></Image>
-              </div>
+            <div className="relative rounded-lg opacity-100 flex-none h-20 md:h-28 w-20 md:w-40 overflow-hidden will-change-transform">
+              <Image
+                src={image}
+                alt={title}
+                fill
+                className="rounded-xl object-cover object-center"
+                quality={95}
+                sizes="(min-width: 768px) 320px, 160px"
+                priority
+              />
             </div>
+
             <div className="flex flex-col flex-nowrap gap-2 h-min max-w-[420px] overflow-visible relative ">
               <div className="flex flex-row flex-nowrap gap-5 h-min justify-center overflow-visible p-0 relative w-min">
                 <div className="flex flex-col justify-start flex-shrink-0 opacity-100 flex-none h-auto relative whitespace-pre w-auto">

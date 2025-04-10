@@ -1,4 +1,4 @@
-"use client"; // For Next.js to avoid hydration issues
+"use client"; // Needed for client-side animations in Next.js
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
@@ -11,28 +11,35 @@ const AnimatedSection = ({ children }) => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    const element = sectionRef.current;
+    const ctx = gsap.context(() => {
+      const element = sectionRef.current;
 
-    gsap.fromTo(
-      element,
-      { opacity: 0, y: -50, scale: 1 },
-      {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        duration: 5,
-        ease: "power2.out",
-        delay: 0.1,
-        scrollTrigger: {
-          trigger: element,
-          start: "top 60%", // When the top of the element is 80% down the viewport
-          end: "top 50%", // When it scrolls up to 30% of the viewport
-          scrub: true, // Smooth animation linked to scroll position
-          toggleActions: "play none none none", // Play only on scroll down
-          once: true, // Ensure the animation triggers only once
+      gsap.fromTo(
+        element,
+        {
+          opacity: 0,
+          y: 50,
+          scale: 0.95,
         },
-      }
-    );
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 1.2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: element,
+            start: "top 80%",
+            end: "top 60%",
+            scrub: false, // smoother experience — scrub: true is best for parallax, not fades
+            toggleActions: "play none none none",
+            once: true,
+          },
+        }
+      );
+    }, sectionRef);
+
+    return () => ctx.revert(); // clean up on unmount
   }, []);
 
   return (
