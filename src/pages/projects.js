@@ -60,7 +60,7 @@ const Projects = () => {
               className="flex flex-col items-center justify-center bg-[#fff0] flex-[1_0_0px] gap-0 h-min overflow-visible relative lg:w-[1px]"
             >
               <AnimatedSection>
-                <RecentProjects />
+                <RecentProjects showAll />
               </AnimatedSection>
 
               <div className="pt-28"></div>
