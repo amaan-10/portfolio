@@ -69,8 +69,25 @@
     margin: auto;
     background: #282936;
   }
+
+  button.learn-more .circle .icon2 {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #3b82f6;
+  }
   
   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+
+  button.learn-more .circle .icon2.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     left: 0.625rem;
     width: 1.125rem;
@@ -82,11 +99,23 @@
     position: absolute;
     content: '';
     top: -0.25rem;
-    right: 0.0625rem;
+    right: 0.0rem;
     width: 0.625rem;
     height: 0.625rem;
     border-top: 0.125rem solid #282936;
     border-right: 0.125rem solid #282936;
+    transform: rotate(45deg);
+  }
+
+  button.learn-more .circle .icon2.arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    right: 0.0rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #3b82f6;
+    border-right: 0.125rem solid #3b82f6;
     transform: rotate(45deg);
   }
   
@@ -112,6 +141,11 @@
   
   button.learn-more:hover .circle .icon.arrow {
     background: #282936;
+    transform: translate(1rem, 0);
+  }
+
+  button.learn-more:hover .circle .icon2.arrow {
+    background: #3b82f6;
     transform: translate(1rem, 0);
   }
   
