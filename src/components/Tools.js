@@ -19,6 +19,107 @@ import ChatGPT from "../assets/chatgpt-logo.png";
 import ToolCard from "./ToolCard";
 
 const Tools = () => {
+  const toolsList = [
+    {
+      image: HTML,
+      title: "HTML",
+      description:
+        "A standard markup language used to structure content on the Web.",
+      link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    },
+    {
+      image: CSS,
+      title: "CSS",
+      description:
+        "A stylesheet language used to style and enhance website presentation.",
+      link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    },
+    {
+      image: JavaScript,
+      title: "JavaScript",
+      description: "A programming language and core technology of the Web.",
+      link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    },
+    {
+      image: TypeScript,
+      title: "TypeScript",
+      description: "TS extends JS by adding types to the language.",
+      link: "https://www.typescriptlang.org",
+    },
+    {
+      image: BootStrap,
+      title: "BootStrap",
+      description: "Mobile-first front-end CSS framework",
+      link: "https://getbootstrap.com",
+    },
+    {
+      image: TailWind,
+      title: "Tailwind",
+      description: "A utility-first CSS framework.",
+      link: "https://tailwindcss.com/",
+    },
+    {
+      image: Reactjs,
+      title: "ReactJS",
+      description: "The library for web and UI",
+      link: "https://react.dev/",
+    },
+    {
+      image: Nextjs,
+      title: "NextJS",
+      description: "React framework",
+      link: "https://nextjs.org/",
+    },
+    {
+      image: Nodejs,
+      title: "NodeJS",
+      description: "Used for server-side scripting",
+      link: "https://nodejs.org/en",
+    },
+    {
+      image: Expressjs,
+      title: "ExpressJS",
+      description: "Node.js web application framework",
+      link: "https://expressjs.com/",
+    },
+    {
+      image: MySQL,
+      title: "MySQL",
+      description: "An open-source relational database management system",
+      link: "https://www.mysql.com/",
+    },
+    {
+      image: MongoDB,
+      title: "MongoDB",
+      description: "A NoSQL document database",
+      link: "https://www.mongodb.com/",
+    },
+    {
+      image: CPP,
+      title: "C++",
+      description: "An object-oriented programming language",
+      link: "https://isocpp.org/",
+    },
+    {
+      image: Python,
+      title: "Python",
+      description: "A general-purpose programming language",
+      link: "https://www.python.org/",
+    },
+    // {
+    //   image: Java,
+    //   title: "Java",
+    //   description: "A class-based, object-oriented programming language",
+    //   link: "https://www.java.com/en",
+    // },
+    // {
+    //   image: ChatGPT,
+    //   title: "ChatGPT",
+    //   description: "AI Assistant",
+    //   link: "https://chatgpt.com/",
+    // },
+  ];
+
   return (
     <>
       <div className="flex flex-col items-center justify-center gap-[60px] h-min overflow-hidden relative w-full">
@@ -32,112 +133,15 @@ const Tools = () => {
             </h1>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-[10px] auto-rows-min justify-start w-full relative p-0">
-            <ToolCard
-              image={HTML}
-              title={"HTML"}
-              description={
-                "A standard markup language used to structure content on the Web"
-              }
-              link={"https://developer.mozilla.org/en-US/docs/Web/HTML"}
-            />
-            <ToolCard
-              image={CSS}
-              title={"CSS"}
-              description={
-                "A stylesheet language used to style and enhance website presentation"
-              }
-              link={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
-            />
-            <ToolCard
-              image={JavaScript}
-              title={"JavaScript"}
-              description={
-                "A programming language and core technology of the Web"
-              }
-              link={"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}
-            />
-            <ToolCard
-              image={TypeScript}
-              title={"TypeScript"}
-              description={"TS extends JS by adding types to the language."}
-              link={"https://www.typescriptlang.org/"}
-            />
-            <ToolCard
-              image={BootStrap}
-              title={"Bootstrap"}
-              description={"Mobile-first front-end CSS framework"}
-              link={"https://getbootstrap.com/"}
-            />
-            <ToolCard
-              image={TailWind}
-              title={"Tailwind"}
-              description={"A utility-first CSS framework."}
-              link={"https://tailwindcss.com/"}
-            />
-            <ToolCard
-              image={Reactjs}
-              title={"ReactJS"}
-              description={"The library for web and UI"}
-              link={"https://react.dev/"}
-            />
-            <ToolCard
-              image={Nextjs}
-              title={"NextJS"}
-              description={"React framework"}
-              link={"https://nextjs.org/"}
-            />
-            <ToolCard
-              image={Nodejs}
-              title={"NodeJS"}
-              description={"Used for server-side scripting"}
-              link={"https://nodejs.org/en"}
-            />
-            <ToolCard
-              image={Expressjs}
-              title={"ExpressJS"}
-              description={"Node.js web application framework"}
-              link={"https://expressjs.com/"}
-            />
-            <ToolCard
-              image={MySQL}
-              title={"MySQL"}
-              description={
-                "An open-source relational database management system"
-              }
-              link={"https://www.mysql.com/"}
-            />
-            <ToolCard
-              image={MongoDB}
-              title={"MongoDB"}
-              description={"A NoSQL document database"}
-              link={"https://www.mongodb.com/"}
-            />
-            <ToolCard
-              image={CPP}
-              title={"C++"}
-              description={"An object-oriented programming language"}
-              link={"https://isocpp.org/"}
-            />
-            <ToolCard
-              image={Python}
-              title={"Python"}
-              description={"A general-purpose programming language"}
-              link={"https://www.python.org/"}
-            />
-            <ToolCard
-              image={Java}
-              title={"Java"}
-              description={
-                "A class-based, object-oriented programming language"
-              }
-              link={"https://www.java.com/en"}
-            />
-            <ToolCard
-              image={ChatGPT}
-              title={"ChatGPT"}
-              description={"AI Assistant"}
-              link={"https://chatgpt.com/"}
-            />
+            {toolsList.map((tool, index) => (
+              <ToolCard
+                key={index}
+                image={tool.image}
+                title={tool.title}
+                description={tool.description}
+                link={tool.link}
+              />
+            ))}
           </div>
         </div>
       </div>
